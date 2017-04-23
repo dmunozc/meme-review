@@ -6,8 +6,11 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+5.0
 
 * System dependencies
+This is for development only
+If using this for deploment. Adjust gemfile for your required dependencies
 
 * Configuration
 
