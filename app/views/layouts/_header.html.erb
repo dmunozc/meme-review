@@ -1,0 +1,14 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <%= link_to(image_tag("logo.png",class:"resize"),"#")%>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <%=render('layouts/navbar_content')%>
+      </ul>
+    </div>
+  </nav>
+</div>
+<ul class="side-nav" id="mobile-demo">
+  <%=render('layouts/navbar_content')%>
+</ul>

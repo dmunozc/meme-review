@@ -13,5 +13,31 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require materialize-sprockets
 //= require_tree .
 //= require serviceworker-companion
+function buildToast(message, timeout){
+  if(timeout <= 0){
+    timeout = 2750;
+  }
+  var notification = document.querySelector('.mdl-js-snackbar');
+  notification.MaterialSnackbar.showSnackbar(
+    {
+      message: message,
+      timeout: timeout
+    }
+  );
+}
+function buildSnackbar(message, timeout, actionHandler, actionText){
+  if(timeout <= 0){
+    timeout = 2750;
+  }
+  var notification = document.querySelector('.mdl-js-snackbar');
+  var data = {
+    message: message,
+    actionHandler: actionHandler,
+    actionText: actionText,
+    timeout: timeout
+  };
+  notification.MaterialSnackbar.showSnackbar(data);
+}
