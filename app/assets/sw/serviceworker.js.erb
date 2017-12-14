@@ -1,8 +1,9 @@
-var CACHE_VERSION = 'v0.203';
+var CACHE_VERSION = 'v0.202';
 var CACHE_NAME = CACHE_VERSION + ':sw-cache-';
+var debugSW = false;
 
 function onInstall(event) {
-  console.log('[Serviceworker]', "Installing!", event);
+  if (debugSW) {console.log('[Serviceworker]', "Installing!", event);}
   event.waitUntil(
     caches.open(CACHE_NAME).then(function prefill(cache) {
       return cache.addAll([
@@ -14,14 +15,14 @@ function onInstall(event) {
         '<%= asset_path "application.css" %>',
 
         '/offline.html',
-
+        '<%= asset_path "logo.ico" %>',
       ]);
     })
   );
 }
 
 function onActivate(event) {
-  console.log('[Serviceworker]', "Activating!", event);
+  if (debugSW) {console.log('[Serviceworker]', "Activating!", event);}
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
@@ -39,39 +40,14 @@ function onActivate(event) {
 }
 
 function onFetch(event) {
+
+  //if (!request.url.match(/^https?:\/\/example.com/) ) { return; }
+  //if (request.method !== 'GET') { return; }
   event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
+    caches.match(event.request).then(function(response) {
         // Cache hit - return response
-        if (response) {
-          return response;
-        }
-
-        // IMPORTANT: Clone the request. A request is a stream and
-        // can only be consumed once. Since we are consuming this
-        // once by cache and once by the browser for fetch, we need
-        // to clone the response.
-        var fetchRequest = event.request.clone();
-
-        return fetch(fetchRequest).then(function(response) {
-          // Check if we received a valid response
-          if(!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-
-          // IMPORTANT: Clone the response. A response is a stream
-          // and because we want the browser to consume the response
-          // as well as the cache consuming the response, we need
-          // to clone it so we have two streams.
-          var responseToCache = response.clone();
-
-          caches.open(CACHE_NAME).then(function(cache) {
-              cache.put(event.request, responseToCache);
-          });
-          return response;
-        }).catch(function(error){
-           caches.match("/offline.html"); //broken
-           //buildToast("Unable to Connect...",-1);
+        return response || fetch(event.request).catch(function(error){
+          return caches.match("/offline.html"); 
         });
     })
   );
@@ -81,7 +57,7 @@ self.addEventListener('install', onInstall);
 self.addEventListener('activate', onActivate);
 self.addEventListener('fetch', onFetch);
 self.addEventListener('message', function(event){
-  console.log(event.data);
+  if (debugSW) {console.log(event.data);}
   if (event.data.action == "skipWaiting"){
     self.skipWaiting();
   }

@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="isMobile" content="<%= browser.device.mobile?%>">
     <meta name="theme-color" content="#d30303">
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <%= favicon_link_tag 'logo.ico' %>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     
-    <script src="https://code.getmdl.io/1.3.0/material.min.js" async></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'layouts/shim' %>
-  <link rel="manifest" href="/manifest.json" />
-<meta name="apple-mobile-web-app-capable" content="yes"></head>
+  </head>
 
   <body>
     <%= render 'layouts/header' %> 
+    <% flash.each do |message_type, message| %>
+      <!--<div class="alert alert-<%= message_type %>"><%= message %></div>-->
+      <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
