@@ -1,5 +1,11 @@
-@import "materialize";
+@import "materialize/components/color";
 $main-color: #d30303; //211,3,3
+$main-color-dark: #a80303; //211,3,3
+$main-color-light: #ff1111; //211,3,3
+$primary-color: $main-color;
+$primary-color-light: $main-color-light;
+$primary-color-dark: $main-color-dark;
+@import "materialize";
 
 .need_margin_body{
   padding-top: 52px !important;
