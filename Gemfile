@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 5.1.4'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -38,12 +38,12 @@ gem 'mini_magick',             '4.5.1'
 gem 'fog',                     '1.38.0'
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
-gem 'bootstrap', ' 4.0.0.alpha2'
 gem 'json'
-gem 'chartkick'
 gem 'materialize-sass'
 gem "browser"
 gem "serviceworker-rails"
+gem "devise"
+gem "material_icons"
 #end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -18,18 +18,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes"></head>
 
   <body>
-    <script>
-    $(document).on('turbolinks:load', function() {
-    <% flash.each do |message_type, message| %>
-      setTimeout(function(){buildToast("<%=message%>",-1)},1);
-    <% end %>
-    });
-    </script>
     <%= render 'layouts/header' %> 
     <%= yield %>
-    <div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar">
-      <div class="mdl-snackbar__text"></div>
-      <button type="button" class="mdl-snackbar__action"></button>
-    </div>
   </body>
 </html>
