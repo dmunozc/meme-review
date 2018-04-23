@@ -1,12 +1,27 @@
-@import "materialize/components/color";
-$main-color: #d30303; //211,3,3
-$main-color-dark: #a80303; //211,3,3
-$main-color-light: #ff1111; //211,3,3
+@import "materialize/components/color-variables";
+$main-color: #EB0E21; //211,3,3
+$main-color-dark: #6B060F; //211,3,3
+$main-color-light: #F80F23; //211,3,3
+$complementary-color: #F2F2F2;
+$triad-color: #EFDC05;
 $primary-color: $main-color;
 $primary-color-light: $main-color-light;
 $primary-color-dark: $main-color-dark;
+$secondary-color: $complementary-color;
 @import "materialize";
 
 .need_margin_body{
   padding-top: 52px !important;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto Slab', serif;
+}
+img.resize{
+   max-width:80%;
+   max-height:80%;
 }

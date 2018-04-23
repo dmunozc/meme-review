@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="isMobile" content="<%= browser.device.mobile?%>">
     <meta name="theme-color" content="#d30303">
     <link rel="manifest" href="/manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,9 +18,19 @@
 
   <body>
     <%= render 'layouts/header' %> 
-    <% flash.each do |message_type, message| %>
-      <!--<div class="alert alert-<%= message_type %>"><%= message %></div>-->
-      <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+    <%if !flash.empty?%>
+      <ul class="collection collection-no-margin">
+      <% flash.each do |message_type, message| %>
+        <%if message_type == "notice"%>
+          <li class="blue lighten-4 blue-text text-accent-4 collection-item alert-<%=message_type%>"><i class="tiny material-icons">announcement</i><%=message%></li>
+        <%elsif message_type == "alert"%>
+          <li class="red lighten-4 red-text text-accent-4 collection-item alert-<%=message_type%>"><i class="tiny material-icons">error_outline</i><%=message%></li>
+        <%else%>
+          <li class="yellow lighten-4 yellow-text text-accent-4 collection-item alert-<%=message_type%>"><i class="tiny material-icons">error_outline</i><%=message%></li>
+        <%end%>
+        
+      <% end %>
+      </ul>
     <% end %>
     <%= yield %>
   </body>

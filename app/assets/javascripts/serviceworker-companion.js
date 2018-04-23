@@ -57,10 +57,8 @@ function trackInstalling(worker){
 }
 function updateReady(worker){
   if (debugSWComp) {console.log("update ready");}
-  var $updateButton = $('<button class="btn-flat toast-action">Update</button>');
-  $updateButton.click(function(e){
-    worker.postMessage({action: 'skipWaiting'});
-  });
-  var $toastContent = $('<span>New Version Available</span>').add($updateButton);
-  Materialize.toast($toastContent, 20000);
+  var updateButton = '<button class="btn-flat toast-action">Update</button>';
+  var toastContent = '<span>New Version Available</span>' + updateButton;
+  M.toast({html: toastContent, displayLength: 7000, completeCallback: function(){worker.postMessage({action: 'skipWaiting'});console.log("damn");}}, 20000);
 }
+

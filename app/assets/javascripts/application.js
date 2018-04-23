@@ -10,18 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
+//= require jquery3
+//= require rails-ujs
 //= require turbolinks
-//= require materialize-sprockets
+//= require materialize
 //= require_tree .
 //= require serviceworker-companion
 
 //this can fix reaload on all properties, carousel problem. but might change on pwa
 $(document).on('turbolinks:load', function() {
   
-   $(".button-collapse").sideNav({
-      draggable: true // Choose whether you can drag to open on touch screens
-    }  );
+   $('.sidenav').sidenav();
 });
 

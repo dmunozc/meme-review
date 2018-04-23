@@ -39,7 +39,7 @@ gem 'fog',                     '1.38.0'
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'json'
-gem 'materialize-sass'
+gem 'materialize-sass', '~> 1.0.0.beta'
 gem "browser"
 gem "serviceworker-rails"
 gem "devise"
