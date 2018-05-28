@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171214051839) do
+ActiveRecord::Schema.define(version: 20180528041456) do
+
+# Could not dump table "memes" because of following StandardError
+#   Unknown type 'json' for column 'trivia'
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

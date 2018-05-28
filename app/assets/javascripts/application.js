@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require jquery3
-//= require rails-ujs
+//= require jquery_ujs
 //= require turbolinks
 //= require materialize
 //= require_tree .
@@ -19,7 +19,6 @@
 
 //this can fix reaload on all properties, carousel problem. but might change on pwa
 $(document).on('turbolinks:load', function() {
-  
-   $('.sidenav').sidenav();
+  M.AutoInit();
 });
 

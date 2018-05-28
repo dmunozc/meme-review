@@ -1,13 +1,17 @@
-@import "materialize/components/color-variables";
-$main-color: #EB0E21; //211,3,3
-$main-color-dark: #6B060F; //211,3,3
-$main-color-light: #F80F23; //211,3,3
-$complementary-color: #F2F2F2;
-$triad-color: #EFDC05;
+$main-color: #FE1126; //211,3,3
+$main-color-dark: #c20000; //211,3,3
+$main-color-light: #ff5e51; //211,3,3
+$complementary-color: #0CBBE3;
+$complementary-color-dark: #008bb1;
+$complementary-color-light: #67eeff;
+
 $primary-color: $main-color;
 $primary-color-light: $main-color-light;
 $primary-color-dark: $main-color-dark;
 $secondary-color: $complementary-color;
+
+$card-link-color: $complementary-color;
+$card-link-color-light: $complementary-color-light;
 @import "materialize";
 
 .need_margin_body{
@@ -17,11 +21,28 @@ $secondary-color: $complementary-color;
 html {
   font-family: 'Roboto', sans-serif;
 }
+body{
+  background: #F0F0F0;
+}
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Roboto Slab', serif;
 }
-img.resize{
+
+.brand-logo{
    max-width:80%;
    max-height:80%;
+}
+
+.image-main{
+}
+.card-image-main{
+  max-height:  40vh;
+  overflow: hidden;
+}
+.image-rating{
+  height: 20vh;
+}
+.collection-header{
+ color:$main-color; 
 }
