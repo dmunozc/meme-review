@@ -42,6 +42,7 @@ gem 'materialize-sass', '~> 1.0.0.beta'
 gem "serviceworker-rails"
 gem "devise"
 gem "material_icons"
+gem 'lodash-rails'
 #end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
