@@ -1,5 +1,7 @@
 class Meme < ApplicationRecord
   before_save :randomize_id
+  default_scope -> { order(created_at: :desc) }
+
   self.per_page = 6
   private 
     def randomize_id

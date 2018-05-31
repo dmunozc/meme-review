@@ -60,7 +60,7 @@ Meme.create!(name: "Doki Doki Literature Club",
               yt_link: "https://youtu.be/qhu7Xhrt2dE?t=5m36s",
               yt_title: "ZOOTOPIA MEME [MEME REVIEW] 👏 👏 #3",
               main_quote: "It's a normie proof meme",
-              trivia: "[\"Meme #7\", \"Yuri is bae\", \"Just Monika\", \"Pewds signs new Swedish national anthem\"]"
+              trivia: "[\"Meme #7\", \"Yuri is bae\", \"Just Monika\", \"Pewds sings new Swedish national anthem\"]"
             )
 Meme.create!(name: "Death Stranding",
               image_name: "death-s",
@@ -388,7 +388,7 @@ Meme.create!(name: "Kanye West",
               yt_link: "https://youtu.be/XD0lxNiZ7mE?t=0m41s",
               yt_title: "KANYE WEST TWITTER [MEME REVIEW] 👏 👏 #18",
               main_quote: "Is he OK signing us?",
-              trivia: "[\"Meme #48\", \"Thank you Pewds, very cool!\", \"Epic Pewds rap\"], \"Brad #1, you messed with our bonus memes\"]"
+              trivia: "[\"Meme #48\", \"Thank you Pewds, very cool!\", \"Epic Pewds rap\", \"Brad #1, you messed with our bonus memes\"]"
             )
 Meme.create!(name: "Brendan Fraser",
               image_name: "branden",
@@ -412,7 +412,7 @@ Meme.create!(name: "Disintegration",
               yt_link: "https://youtu.be/sqFVrfinlYk?t=1m26s",
               yt_title: "MARVEL INFINITY WARS DISINTEGRATION MEME MAKES ME HAHA [MEME REVIEW] 👏 👏 #19",
               main_quote: "Just because I'm clapping, doesn't mean any memes are dying",
-              trivia: "[\"Meme #51\", \"What happened to your beard Pewds\"], \"Pewds killed filthy frank\", \"Bonus meme was disintegrated by Brad #1\"]"
+              trivia: "[\"Meme #51\", \"What happened to your beard Pewds\", \"Pewds killed filthy frank\", \"Bonus meme was disintegrated by Brad #1\"]"
             )
 Meme.create!(name: "Is this a pidgeon",
               image_name: "its-not",
