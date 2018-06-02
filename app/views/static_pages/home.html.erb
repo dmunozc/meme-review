@@ -1,7 +1,6 @@
 <%provide(:title, "Meme👏Review👏")%>
 <div class="row container" id="main-elem">
-    <%=render partial: 'shared/meme', collection: @memes%>
-  
+    <%=render partial: 'memes/meme', collection: @memes%>
 </div>
 <%= will_paginate @memes%>
 <footer class="page-footer">

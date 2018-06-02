@@ -29,6 +29,7 @@ class MaterializeLinkRenderer < WillPaginate::ActionView::LinkRenderer
           tag(:li, link(page, page, :rel => rel_value(page)), :class => 'active')
         end
       end
+      
       def previous_or_next_page(page, text, classname)
         if classname == 'previous_page'
           icon = tag(:i,'chevron_left' ,class: 'material-icons')
@@ -41,6 +42,7 @@ class MaterializeLinkRenderer < WillPaginate::ActionView::LinkRenderer
           tag(:li, icon ,:class => classname + ' disabled')
         end
       end
+      
       def html_container(html)
         tag(:ul, html, class: 'pagination center')
       end

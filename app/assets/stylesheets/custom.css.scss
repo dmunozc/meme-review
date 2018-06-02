@@ -49,9 +49,22 @@ h1,h2,h3,h4,h5,h6{
   max-height:  40vh;
   overflow: hidden;
 }
+.card-image-show{
+  max-height:  40vh;
+  overflow: hidden;
+}
 .image-rating{
   height: 20vh;
 }
+.image-rating-show{
+  height: 30vh !important;
+}
 .collection-header{
  color:$main-color; 
+}
+.next_page, .previous_page{
+  color: $main-color-dark !important;
+}
+.pagination li a{
+  color: black;
 }
