@@ -414,7 +414,7 @@ Meme.create!(name: "Disintegration",
               main_quote: "Just because I'm clapping, doesn't mean any memes are dying",
               trivia: "[\"Meme #51\", \"What happened to your beard Pewds\", \"Pewds killed filthy frank\", \"Bonus meme was disintegrated by Brad #1\"]"
             )
-Meme.create!(name: "Is this a pidgeon",
+Meme.create!(name: "Is this a pigeon",
               image_name: "its-not",
               rating_name: "meme-52-rating",
               yt_link: "https://youtu.be/7PzSOvPTHPA?t=1m05s",
