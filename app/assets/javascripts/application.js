@@ -16,12 +16,21 @@
 //= require materialize
 //= require lodash
 //= require lazysizes.min
+//= require masonry.pkgd.min
+//= require imagesloaded.pkgd.min
 //= require_tree .
 //= require serviceworker-companion
 
 //this can fix reaload on all properties, carousel problem. but might change on pwa
 $(document).on('turbolinks:load', function() {
   M.AutoInit();
+  var $grid = $('#main-elem').masonry({
+      itemSelector: '.col',
+      initLayout: true
+  });
+  $grid.imagesLoaded().always( function() {
+    setTimeout(function(){ $grid.masonry('layout'); }, 120);
+  });
   const THRESHOLD = 300;
   const $paginationElem = $('.pagination');
   const $window = $(window);
@@ -51,13 +60,22 @@ $(document).on('turbolinks:load', function() {
         $.ajax({
           url: baseEndpoint + currentPage
         }).done(function (result) {
-          $('#main-elem').append(result);
+          var $items = $(result);
+          $grid.append($items).masonry('appended',$items);
+          
+          $grid.imagesLoaded().progress( function() {
+          }).always(function(){
+            setTimeout(function(){ $grid.masonry('layout'); }, 320);
+          });
           isPaginating = false;
+          $paginationElem.hide();
+        }).fail(function (xhr, textStatus, errorThrown){
+          M.toast({html: 'There is no internet connection!'});
         });
       }
-      if (currentPage >= pagesAmount) {
-        $paginationElem.hide();
-      }
+      //if (currentPage >= pagesAmount) {
+      //  $paginationElem.hide();
+      //}
     }, 100));
 });
 

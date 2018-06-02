@@ -1,17 +1,25 @@
 <%provide(:title, "Meme👏Review👏")%>
 <div class="row container" id="main-elem">
   <%=render partial: 'shared/meme', collection: @memes%>
-  <div class="pagination" data-pagination-endpoint="<%=@endpoint%>" data-pagination-pages="<%=@page_amount%>">
-    <div class="preloader-wrapper small active">
-      <div class="spinner-layer spinner-green-only">
-        <div class="circle-clipper left">
-          <div class="circle"></div>
-        </div><div class="gap-patch">
-          <div class="circle"></div>
-        </div><div class="circle-clipper right">
-          <div class="circle"></div>
-        </div>
+</div>
+<div class="pagination center" data-pagination-endpoint="<%=@endpoint%>" data-pagination-pages="<%=@page_amount%>">
+  <div class="preloader-wrapper large active">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
       </div>
     </div>
   </div>
 </div>
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+    <p class="left">Please don't copystrike me Pewds</p>
+    <%=image_tag("logo.png", class: "right brand-logo-footer")%>
+    </div>
+  </div>
+</footer>

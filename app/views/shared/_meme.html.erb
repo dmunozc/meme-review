@@ -1,76 +1,81 @@
+<%if defined? @memes%>
+  <%lazy = false%>
+<%else%>
+  <%lazy = true%>
+<%end%>
 <div class="col s12 m6 l4">
   <div class="card hoverable sticky-action">
     <div class="card-image z-depth-1 card-image-main">
       <picture>
         <source
           media="(min-width: 993px)" 
-          data-srcset="<%= asset_url("meme-main/" + meme.image_name + "_large_1x.webp")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_large_2x.webp")%> 2x" 
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_large_1x.webp")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_large_2x.webp")%> 2x" 
           type="image/webp">
         <source
           media="(min-width: 993px)" 
-          data-srcset="<%= asset_url("meme-main/" + meme.image_name + "_large_1x.jpg")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_large_2x.jpg")%> 2x" 
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_large_1x.jpg")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_large_2x.jpg")%> 2x" 
           type="image/jpeg">
         <source
           media="(min-width: 601px)"
-          data-srcset="<%= asset_url("meme-main/" + meme.image_name + "_medium_1x.webp")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_medium_2x.webp")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_medium_1x.webp")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_medium_2x.webp")%> 2x"
           type="image/webp">
         <source
           media="(min-width: 601px)"
-          data-srcset="<%= asset_url("meme-main/" + meme.image_name + "_medium_1x.jpg")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_medium_2x.jpg")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_medium_1x.jpg")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_medium_2x.jpg")%> 2x"
           type="image/jpeg">
         <source
           media="(max-width: 600px)"
-          data-srcset="<%= asset_url("meme-main/" + meme.image_name + "_small_1x.webp")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_small_2x.webp")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_small_1x.webp")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_small_2x.webp")%> 2x"
           type="image/webp">
         <source
           media="(max-width: 600px)"
-          data-srcset="<%= asset_url("meme-main/" + meme.image_name + "_small_1x.jpg")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_small_2x.jpg")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_small_1x.jpg")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_small_2x.jpg")%> 2x"
           type="image/jpeg">
-        <img class="lazyload responsive-img image-main" data-src="<%= asset_url("meme-main/" + meme.image_name + "_large_1x.jpg")%>" alt="<%= "Slide " + meme.image_name%>" />
+        <img class="<%= lazy == false ? "" : "lazyload"%> responsive-img image-main" <%= lazy == false ? "" : "data-"%>src="<%= asset_url("meme-main/" + meme.image_name + "_medium_1x.jpg")%>" alt="<%= meme.image_name%>" />
       </picture>
     </div>
     <div class="card-content">
-      <span class="card-title grey-text text-darken-4 activator"><%=meme.name%><i class="material-icons right">more_vert</i></span>
+      <span class="card-title black-text activator"><%=meme.name%><i class="material-icons right">more_vert</i></span>
       <p class="flow-text grey-text">Rating:</p>
       <picture>
         <source
           media="(min-width: 993px)" 
-          data-srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_large_1x.webp")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_large_2x.webp")%> 2x" 
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_large_1x.webp")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_large_2x.webp")%> 2x" 
           type="image/webp">
         <source
           media="(min-width: 993px)" 
-          data-srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_large_1x.png")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_large_2x.png")%> 2x" 
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_large_1x.png")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_large_2x.png")%> 2x" 
           type="image/png">
         <source
           media="(min-width: 601px)"
-          data-srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_medium_1x.webp")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_medium_2x.webp")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_medium_1x.webp")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_medium_2x.webp")%> 2x"
           type="image/webp">
         <source
           media="(min-width: 601px)"
-          data-srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_medium_1x.png")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_medium_2x.png")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_medium_1x.png")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_medium_2x.png")%> 2x"
           type="image/png">
         <source
           media="(max-width: 600px)"
-          data-srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_small_1x.webp")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_small_2x.webp")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_small_1x.webp")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_small_2x.webp")%> 2x"
           type="image/webp">
         <source
           media="(max-width: 600px)"
-          data-srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_small_1x.png")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_small_2x.png")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_small_1x.png")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_small_2x.png")%> 2x"
           type="image/png">
-        <img class="lazyload responsive-img image-rating center" data-src="<%= asset_url("meme-rating/" + meme.rating_name + "_large_1x.png")%>" alt="<%= "Slide " + meme.rating_name%>" />
+        <img class="<%= lazy == false ? "" : "lazyload"%> responsive-img image-rating center" <%= lazy == false ? "" : "data-"%>src="<%= asset_url("meme-rating/" + meme.rating_name + "_large_1x.png")%>" alt="<%= meme.rating_name%>" />
       </picture>
     </div>
     <div class="card-action">
-      <%= link_to(meme.yt_title, meme.yt_link, target: "_blank")%>
+      <%= link_to(meme.yt_title, meme.yt_link, target: "_blank",rel:"noopener noreferrer")%>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Historical Facts<i class="material-icons right">close</i></span>
-      <blockquote><%=meme.main_quote%></blockquote>
+      <span class="card-title black-text flow-text">Historical Facts<i class="material-icons right">close</i></span>
+      <blockquote class="flow-text"><%=meme.main_quote%></blockquote>
       <ul class="collection with-header">
         <li class="collection-header"><h5>Trivia</h5></li>
         <%triviaArray = JSON.parse(meme.trivia)%>
         <% triviaArray.each do |trivia| %>
-          <li class="collection-item"><%=trivia%></li>
+          <li class="collection-item flow-text"><%=trivia%></li>
         <%end%>
       </ul>
     </div>
