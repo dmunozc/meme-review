@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'subscriptions/create'
 
   get 'memes/show'
   root 'static_pages#home'

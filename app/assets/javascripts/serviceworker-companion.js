@@ -1,7 +1,7 @@
-var debugSWComp = true;
+var debugSWComp = false;
 var isSubscribed = false;
 var applicationServerPublicKey = "BM1WV_YQ4hjtnW_8ic7lIV2NzI7XDLL2FQnMjLSm8tYTriKDt0zB3IrnjOipFJSfZxjDeA2YVk-cZbypoT-CDoY";
-if (navigator.serviceWorker && 'PushManager' in window) {
+if (navigator.serviceWorker) {
   $(document).on('turbolinks:load', function() {
     navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
       //once I am here, the service woker was succesfully registered
@@ -43,7 +43,6 @@ if (navigator.serviceWorker && 'PushManager' in window) {
       initializeUI(registration);
     }).catch(function(err){
       //Here the service worker failed to register!
-      console.log('ServiceWorker registration failed: ', err);
     });
     
   });
@@ -62,7 +61,7 @@ function updateReady(worker){
   if (debugSWComp) {console.log("update ready");}
   var updateButton = '<button class="btn-flat toast-action">Update</button>';
   var toastContent = '<span>New Version Available</span>' + updateButton;
-  M.toast({html: toastContent, displayLength: 7000, completeCallback: function(){worker.postMessage({action: 'skipWaiting'});console.log("damn");}}, 20000);
+  M.toast({html: toastContent, displayLength: 7000, completeCallback: function(){worker.postMessage({action: 'skipWaiting'});}}, 20000);
 }
 
 function initializeUI(swRegistration) {
@@ -74,17 +73,18 @@ function initializeUI(swRegistration) {
       subscribeUser(swRegistration);
     }
   });
+  $("a#sub-nav").click(function() {
+    $("a#sub-nav").addClass("disabled");
+    if (isSubscribed) {
+      unsubscribeUser(swRegistration);
+    } else {
+      subscribeUser(swRegistration);
+    }
+  });
   // Set the initial subscription value
   swRegistration.pushManager.getSubscription()
   .then(function(subscription) {
     isSubscribed = !(subscription === null);
-    console.log(isSubscribed);
-    if (isSubscribed) {
-      console.log('User IS subscribed.');
-    } else {
-      console.log('User is NOT subscribed.');
-    }
-
     updateBtn();
   });
 }
@@ -93,20 +93,27 @@ function updateBtn() {
   if (Notification.permission === 'denied') {
     $("#sub-nav").val('SUBSCRIPTION N/A<i class="material-icons right">notifications_none</i>');
     $("#sub-nav").addClass("disabled");
+    $("a#sub-nav").val('SUBSCRIPTION N/A<i class="material-icons right">notifications_none</i>');
+    $("a#sub-nav").addClass("disabled");
     updateSubscriptionOnServer(null);
     return;
   }
   if (isSubscribed) {
     $("#sub-nav").text('UNSUBSCRIBE');
     $("#sub-nav").append('<i class="material-icons right">notifications_active</i>');
+    $("a#sub-nav").text('UNSUBSCRIBE');
+    $("a#sub-nav").append('<i class="material-icons right">notifications_active</i>');
     //pushButton.textContent = 'Disable Push Messaging';
   } else {
     $("#sub-nav").text('SUBSCRIBE');
     $("#sub-nav").append('<i class="material-icons right">notifications_none</i>');
+    $("a#sub-nav").text('SUBSCRIBE');
+    $("a#sub-nav").append('<i class="material-icons right">notifications_none</i>');
     //pushButton.textContent = 'Enable Push Messaging';
   }
 
   $("#sub-nav").removeClass("disabled");
+  $("a#sub-nav").removeClass("disabled");
 }
 function subscribeUser(swRegistration) {
   const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
@@ -118,7 +125,6 @@ function subscribeUser(swRegistration) {
     updateSubscriptionOnServer(subscription);
   })
   .catch(function(err) {
-    console.log('Failed to subscribe the user: ', err);
     
   });
 }
@@ -130,7 +136,6 @@ function unsubscribeUser(swRegistration) {
     }
   })
   .catch(function(error) {
-    console.log('Error unsubscribing', error);
   })
   .then(function() {
     updateSubscriptionOnServer(null);
@@ -142,7 +147,6 @@ function updateSubscriptionOnServer(subscription) {
     $.post("/subscribe", { subscription: subscription.toJSON() }, function( data, textStatus, jqXHR ) {
       if(jqXHR.status == 201){
         isSubscribed = true;
-        console.log('User is subscribed.');
       }else{
         
       }
@@ -153,7 +157,6 @@ function updateSubscriptionOnServer(subscription) {
     $.post("/unsubscribe", function( data, textStatus, jqXHR ) {
       if(jqXHR.status == 200){
         isSubscribed = false;
-        console.log('User is unsubscribed.');
       }else{
         
       }

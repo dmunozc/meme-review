@@ -1,6 +1,6 @@
-var CACHE_VERSION = 'v0.204';
+var CACHE_VERSION = 'v0.206';
 var CACHE_NAME = ':sw-cache-' + CACHE_VERSION;
-var debugSW = true;
+var debugSW = false;
 
 function onInstall(event) {
   if (debugSW) {console.log('[Serviceworker]', "Installing!", event);}
@@ -89,22 +89,19 @@ self.addEventListener('message', function(event){
 
 self.addEventListener('push', function(event) {
   if (debugSW) {console.log('[Serviceworker]', "Push!", event);}
-  console.log('[Service Worker] Push Received.');
-  console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
-  const title = 'Push Codelab';
+  const title = 'Meme👏Review👏';
   const options = {
-    body: 'Yay it works.'
+    body: event.data.text()
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
 });
 self.addEventListener('notificationclick', function(event) {
-  console.log('[Service Worker] Notification click Received.');
 
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('http://localhost:3000')
+    clients.openWindow('https://memereview.app')
   );
 });

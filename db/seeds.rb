@@ -470,3 +470,35 @@ Meme.create!(name: "BONUS MEME Yesn't",
               main_quote: "If you are an absolute beta male soyboy that can't face with any type of confrontation",
               trivia: "[\"Meme #58\", \"No'nt'nt\", \"It is not absolutely hilarous Pewds\"]"
             )
+Meme.create!(name: "Dame tu cosita",
+              image_name: "cosita",
+              rating_name: "meme-59-rating",
+              yt_link: "https://youtu.be/ptYSpR9cTHU?t=0m13s",
+              yt_title: "I FOUND DAME TU COSITA IN FORTNITE",
+              main_quote: "Everyone else in the world moved on from 2012 memes. But Spaniards or Mexicans or Latinas kept it going",
+              trivia: "[\"Meme #59\", \"Despacito 2 is better\", \"Clickbaiters are alive and well\"]"
+            )
+Meme.create!(name: "*SNAP* This one's going in my cringe compilation",
+              image_name: "snap",
+              rating_name: "meme-60-rating",
+              yt_link: "https://youtu.be/ptYSpR9cTHU?t=4m27s",
+              yt_title: "I FOUND DAME TU COSITA IN FORTNITE",
+              main_quote: "Shrek has taken over this one. It's pretty clear",
+              trivia: "[\"Meme #60\", \"Dab on them Dalai Lama\", \"Shrek is life\"]"
+            )
+Meme.create!(name: "Spilled black beans",
+              image_name: "beans",
+              rating_name: "meme-61-rating",
+              yt_link: "https://youtu.be/ptYSpR9cTHU?t=8m12s",
+              yt_title: "I FOUND DAME TU COSITA IN FORTNITE",
+              main_quote: "One of the major privileges of our time. Spilling baked beans",
+              trivia: "[\"Meme #61\", \"No more black beans\"]"
+            )
+Meme.create!(name: "Captain America",
+              image_name: "cap",
+              rating_name: "meme-62-rating",
+              yt_link: "https://youtu.be/ptYSpR9cTHU?t=10m10s",
+              yt_title: "I FOUND DAME TU COSITA IN FORTNITE",
+              main_quote: "I take all my knowledge and opinions from Buzzfeed",
+              trivia: "[\"Meme #62\", \"It's free real estate\"]"
+            )
