@@ -1,5 +1,7 @@
-var debugSWComp = false;
-if (navigator.serviceWorker) {
+var debugSWComp = true;
+var isSubscribed = false;
+var applicationServerPublicKey = "BM1WV_YQ4hjtnW_8ic7lIV2NzI7XDLL2FQnMjLSm8tYTriKDt0zB3IrnjOipFJSfZxjDeA2YVk-cZbypoT-CDoY";
+if (navigator.serviceWorker && 'PushManager' in window) {
   $(document).on('turbolinks:load', function() {
     navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
       //once I am here, the service woker was succesfully registered
@@ -38,6 +40,7 @@ if (navigator.serviceWorker) {
         window.location.reload();
         refreshing = true;
       });
+      initializeUI(registration);
     }).catch(function(err){
       //Here the service worker failed to register!
       console.log('ServiceWorker registration failed: ', err);
@@ -62,3 +65,116 @@ function updateReady(worker){
   M.toast({html: toastContent, displayLength: 7000, completeCallback: function(){worker.postMessage({action: 'skipWaiting'});console.log("damn");}}, 20000);
 }
 
+function initializeUI(swRegistration) {
+   $("#sub-nav").click(function() {
+    $("#sub-nav").addClass("disabled");
+    if (isSubscribed) {
+      unsubscribeUser(swRegistration);
+    } else {
+      subscribeUser(swRegistration);
+    }
+  });
+  // Set the initial subscription value
+  swRegistration.pushManager.getSubscription()
+  .then(function(subscription) {
+    isSubscribed = !(subscription === null);
+    console.log(isSubscribed);
+    if (isSubscribed) {
+      console.log('User IS subscribed.');
+    } else {
+      console.log('User is NOT subscribed.');
+    }
+
+    updateBtn();
+  });
+}
+
+function updateBtn() {
+  if (Notification.permission === 'denied') {
+    $("#sub-nav").val('SUBSCRIPTION N/A<i class="material-icons right">notifications_none</i>');
+    $("#sub-nav").addClass("disabled");
+    updateSubscriptionOnServer(null);
+    return;
+  }
+  if (isSubscribed) {
+    $("#sub-nav").text('UNSUBSCRIBE');
+    $("#sub-nav").append('<i class="material-icons right">notifications_active</i>');
+    //pushButton.textContent = 'Disable Push Messaging';
+  } else {
+    $("#sub-nav").text('SUBSCRIBE');
+    $("#sub-nav").append('<i class="material-icons right">notifications_none</i>');
+    //pushButton.textContent = 'Enable Push Messaging';
+  }
+
+  $("#sub-nav").removeClass("disabled");
+}
+function subscribeUser(swRegistration) {
+  const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
+  swRegistration.pushManager.subscribe({
+    userVisibleOnly: true,
+    applicationServerKey: applicationServerKey
+  })
+  .then(function(subscription) {
+    updateSubscriptionOnServer(subscription);
+  })
+  .catch(function(err) {
+    console.log('Failed to subscribe the user: ', err);
+    
+  });
+}
+function unsubscribeUser(swRegistration) {
+  swRegistration.pushManager.getSubscription()
+  .then(function(subscription) {
+    if (subscription) {
+      return subscription.unsubscribe();
+    }
+  })
+  .catch(function(error) {
+    console.log('Error unsubscribing', error);
+  })
+  .then(function() {
+    updateSubscriptionOnServer(null);
+  });
+}
+function updateSubscriptionOnServer(subscription) {
+
+  if (subscription) {
+    $.post("/subscribe", { subscription: subscription.toJSON() }, function( data, textStatus, jqXHR ) {
+      if(jqXHR.status == 201){
+        isSubscribed = true;
+        console.log('User is subscribed.');
+      }else{
+        
+      }
+      updateBtn();
+    });
+    //subscriptionDetails.classList.remove('is-invisible');
+  } else {
+    $.post("/unsubscribe", function( data, textStatus, jqXHR ) {
+      if(jqXHR.status == 200){
+        isSubscribed = false;
+        console.log('User is unsubscribed.');
+      }else{
+        
+      }
+      updateBtn();
+    });
+    //subscriptionDetails.classList.add('is-invisible');
+  }
+}
+
+
+function urlB64ToUint8Array(base64String) {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding)
+    .replace(/\-/g, '+')
+    .replace(/_/g, '/');
+
+  const rawData = window.atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+
+  for (var i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
