@@ -7,29 +7,29 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '5.1.6'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '3.11.4'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '5.0.7'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '4.1.10'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '4.2.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.1.1'
+gem 'jquery-rails', '4.3.3'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'turbolinks', '5.1.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '2.7.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
- gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt', '3.1.12'
 
 #Added by me
 gem 'faker',                   '1.6.6'
@@ -38,11 +38,11 @@ gem 'mini_magick',             '4.5.1'
 gem 'fog',                     '1.38.0'
 gem 'will_paginate',           '3.1.0'
 gem 'json'
-gem 'materialize-sass', '~> 1.0.0.beta'
-gem "serviceworker-rails"
-gem "devise"
-gem "material_icons"
-gem 'lodash-rails'
+gem 'materialize-sass', '~> 1.0.0.rc1'
+gem "serviceworker-rails", '0.5.5'
+gem "devise", '4.4.3'
+gem "material_icons", '2.2.1'
+gem 'lodash-rails', '4.17.10'
 #end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -69,7 +69,7 @@ group :test do
   gem 'guard-minitest',           '>= 2.4.4'
 end
 group :production do
-  gem 'pg',   '0.18.4'
+  gem 'pg',   '1.0.0'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
