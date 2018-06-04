@@ -3,7 +3,7 @@ var isSubscribed = false;
 var applicationServerPublicKey = "BM1WV_YQ4hjtnW_8ic7lIV2NzI7XDLL2FQnMjLSm8tYTriKDt0zB3IrnjOipFJSfZxjDeA2YVk-cZbypoT-CDoY";
 if (navigator.serviceWorker) {
   $(document).on('turbolinks:load', function() {
-    navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
+    navigator.serviceWorker.register('./serviceworker.js').then(function(registration) {
       //once I am here, the service woker was succesfully registered
       //return if it is not the service worker that controls this page
       //i.e. this page didnt load using a service worker, so they loaded content from the network
