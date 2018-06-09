@@ -502,3 +502,27 @@ Meme.create!(name: "Captain America",
               main_quote: "I take all my knowledge and opinions from Buzzfeed",
               trivia: "[\"Meme #62\", \"It's free real estate\"]"
             )
+Meme.create!(name: "T-posing",
+              image_name: "tpose",
+              rating_name: "meme-63-rating",
+              yt_link: "https://youtu.be/JUabUTqMgpM?t=0m23s",
+              yt_title: "The Greatest Meme of all time...",
+              main_quote: "What happened to good old dabbing?",
+              trivia: "[\"Meme #63\", \"Does Pewds have any friends?\", \"Dab is life\"]"
+            )
+Meme.create!(name: "Loss Everywhere",
+              image_name: "loss-e",
+              rating_name: "meme-2-rating",
+              yt_link: "https://youtu.be/JUabUTqMgpM?t=3m42s",
+              yt_title: "The Greatest Meme of all time...",
+              main_quote: "Next time you see a waffle, you will be like, that's not a waffle",
+              trivia: "[\"Meme #64\", \"Pewds makes a mistake in his rating\", \"Pewds kills all the memes\", \"First time Pewds re-reviews a meme\"]"
+            )
+Meme.create!(name: "BONUS MEME Bonus Meme",
+              image_name: "bonus-meme",
+              rating_name: "meme-65-rating",
+              yt_link: "https://youtu.be/JUabUTqMgpM?t=7m50s",
+              yt_title: "The Greatest Meme of all time...",
+              main_quote: "We have time for bonus meme! Good luck for you!",
+              trivia: "[\"Meme #65\", \"Epic Bonus Meme comeback\", \"I won't forgive Pewds if he kills Bonus Meme\"]"
+            )
