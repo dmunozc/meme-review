@@ -27,7 +27,7 @@
       </picture>
     </div>
     <div class="card-content">
-      <span class="card-title black-text activator"><%= link_to(meme.name, meme_path(meme), target: "_blank",rel:"noopener noreferrer")%></span>
+      <span class="card-title black-text activator"><%= link_to(meme.name, meme_path(meme), target: "_blank",rel:"noopener noreferrer", class: "tooltipped", data: {position:"bottom", tooltip:"Click for more"})%></span>
       <p class="flow-text grey-text">Rating:</p>
       <picture>
         <source
@@ -50,7 +50,7 @@
       </picture>
     </div>
     <div class="card-action">
-      <%= link_to(meme.yt_title, meme.yt_link, target: "_blank",rel:"noopener noreferrer")%>
+      <%= link_to(meme.yt_title, meme.yt_link, target: "_blank",rel:"noopener noreferrer", class: "tooltipped", data: {position:"bottom", tooltip:"Click for Pewds video"})%>
     </div>
   </div>
 </div>

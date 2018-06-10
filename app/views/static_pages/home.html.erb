@@ -1,6 +1,12 @@
 <%provide(:title, "Meme👏Review👏")%>
+<div class="row white-text" id="main-info">
+  <div class="col offset-s2 s8">
+    <p class="flow-text">Based on YouTube's favorite show. Meme Review! All the memes PewDiePie has reviewed along with their ratings and episode</p>
+  </div>
+</div>
 <div class="row container" id="main-elem">
-    <%=render partial: 'memes/meme', collection: @memes%>
+  
+  <%=render partial: 'memes/meme', collection: @memes%>
 </div>
 <%= will_paginate @memes%>
 <footer class="page-footer">
