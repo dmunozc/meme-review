@@ -526,3 +526,35 @@ Meme.create!(name: "BONUS MEME Bonus Meme",
               main_quote: "We have time for bonus meme! Good luck for you!",
               trivia: "[\"Meme #65\", \"Epic Bonus Meme comeback\", \"I won't forgive Pewds if he kills Bonus Meme\"]"
             )
+Meme.create!(name: "Boar Vessel 600-500 BC",
+              image_name: "boar-v",
+              rating_name: "meme-66-rating",
+              yt_link: "https://youtu.be/vTVUYNhVP4A?t=0m27s",
+              yt_title: "WALUIGI, BOAR VESSEL, X",
+              main_quote: "Born just in time to Boar...",
+              trivia: "[\"Meme #66\", \"Pewds is too old for this shit\", \"Pewds getting better with this Spanish\"]"
+            )
+Meme.create!(name: "SUB-MEME North Korea-Trump",
+              image_name: "nk-trump",
+              rating_name: "meme-67-rating",
+              yt_link: "https://youtu.be/vTVUYNhVP4A?t=3m57s",
+              yt_title: "WALUIGI, BOAR VESSEL, X",
+              main_quote: "Minions are... sexy",
+              trivia: "[\"Meme #67\", \"First Sub-Meme ever\", \"Too many claps Pewds\"]"
+            )
+Meme.create!(name: "Waluigi Smash Snub",
+              image_name: "waluigi",
+              rating_name: "meme-68-rating",
+              yt_link: "https://youtu.be/vTVUYNhVP4A?t=6m03s",
+              yt_title: "WALUIGI, BOAR VESSEL, X",
+              main_quote: "My love for Waluigi is never going to fade",
+              trivia: "[\"Meme #68\", \"Nintendo has no chill\", \"Too many basicallys Pewds\"]"
+            )
+Meme.create!(name: "Annoyed Bird",
+              image_name: "bird",
+              rating_name: "meme-69-rating",
+              yt_link: "https://youtu.be/vTVUYNhVP4A?t=8m34s",
+              yt_title: "WALUIGI, BOAR VESSEL, X",
+              main_quote: "Yapity dapity depity",
+              trivia: "[\"Meme #69\", \"It was really forced\" ]"
+            )
