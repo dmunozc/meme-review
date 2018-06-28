@@ -558,3 +558,27 @@ Meme.create!(name: "Annoyed Bird",
               main_quote: "Yapity dapity depity",
               trivia: "[\"Meme #69\", \"It was really forced\" ]"
             )
+Meme.create!(name: "OBUNGA",
+              image_name: "obama",
+              rating_name: "meme-70-rating",
+              yt_link: "https://youtu.be/y3uhVlzuVzw?t=0m33s",
+              yt_title: "OBUNGA 💖ELAS 🆃🅷🅸🅲🅲💖 GIRL",
+              main_quote: "I see through your Obunga lies",
+              trivia: "[\"Meme #70\", \"Not racist at all Pewds\", \"Obunga is summoned\" ]"
+            )
+Meme.create!(name: "Elastigirl Thicc",
+              image_name: "thicc",
+              rating_name: "meme-71-rating",
+              yt_link: "https://youtu.be/y3uhVlzuVzw?t=4m26s",
+              yt_title: "OBUNGA 💖ELAS 🆃🅷🅸🅲🅲💖 GIRL",
+              main_quote: "Rubber is extremely attractive",
+              trivia: "[\"Meme #71\", \"Pewds like rubber wahmen\", \"EXTRA THICC\", \"The New Yorker is the new WSJ\" ]"
+            )
+Meme.create!(name: "People who thank the bus driver",
+              image_name: "bus",
+              rating_name: "meme-72-rating",
+              yt_link: "https://youtu.be/y3uhVlzuVzw?t=9m41s",
+              yt_title: "OBUNGA 💖ELAS 🆃🅷🅸🅲🅲💖 GIRL",
+              main_quote: "My grave will have plated gold",
+              trivia: "[\"Meme #72\", \"Who thanks the bus driver?\", \"EVerybody hates Ethan\" ]"
+            )
