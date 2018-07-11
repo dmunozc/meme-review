@@ -582,3 +582,35 @@ Meme.create!(name: "People who thank the bus driver",
               main_quote: "My grave will have plated gold",
               trivia: "[\"Meme #72\", \"Who thanks the bus driver?\", \"EVerybody hates Ethan\" ]"
             )
+Meme.create!(name: "Car Salesman",
+              image_name: "slaps",
+              rating_name: "meme-73-rating",
+              yt_link: "https://youtu.be/IDLbR4U8Ng4?t=0m37s",
+              yt_title: "SHE CALLS THE POLICE FOR A BBQ... and then she realizes",
+              main_quote: "Literally anything is a meme these days",
+              trivia: "[\"Meme #73\", \"That's so funny\" ]"
+            )
+Meme.create!(name: "6ix9ine",
+              image_name: "69",
+              rating_name: "meme-74-rating",
+              yt_link: "https://youtu.be/IDLbR4U8Ng4?t=2m25s",
+              yt_title: "SHE CALLS THE POLICE FOR A BBQ... and then she realizes",
+              main_quote: "Is this this little oozy fella that I have been heearing so much about",
+              trivia: "[\"Meme #74\", \"This is a true final Souncloud boss\", \"AK Running\" ]"
+            )
+Meme.create!(name: "Overwatch Hamster",
+              image_name: "hamster",
+              rating_name: "meme-75-rating",
+              yt_link: "https://youtu.be/IDLbR4U8Ng4?t=7m09s",
+              yt_title: "SHE CALLS THE POLICE FOR A BBQ... and then she realizes",
+              main_quote: "Finnally a video game character I can personally relate to",
+              trivia: "[\"Meme #75\", \"What's the ethnicity of the hamster?\" ]"
+            )
+Meme.create!(name: "NOT BONUS MEME A new foe approaches!",
+              image_name: "new-foe",
+              rating_name: "meme-76-rating",
+              yt_link: "https://youtu.be/IDLbR4U8Ng4?t=8m46s",
+              yt_title: "SHE CALLS THE POLICE FOR A BBQ... and then she realizes",
+              main_quote: "My favorite one is the charcoal lady",
+              trivia: "[\"Meme #76\", \"It's illegal to sell charcoal\", \"Real heroes nobody needed\" ]"
+            )
