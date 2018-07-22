@@ -614,3 +614,51 @@ Meme.create!(name: "NOT BONUS MEME A new foe approaches!",
               main_quote: "My favorite one is the charcoal lady",
               trivia: "[\"Meme #76\", \"It's illegal to sell charcoal\", \"Real heroes nobody needed\" ]"
             )
+Meme.create!(name: "Friendly Looking Cat",
+              image_name: "cute-neko",
+              rating_name: "meme-77-rating",
+              yt_link: "https://youtu.be/MQ4NKVurnO0?t=0m10s",
+              yt_title: "Tekashi 6ix9ine saved by polite cat",
+              main_quote: "That's not gay",
+              trivia: "[\"Meme #77\", \"Meow Cringe\"]"
+            )
+Meme.create!(name: "Fast Tekashi 6ix9ine",
+              image_name: "run-69-run",
+              rating_name: "meme-78-rating",
+              yt_link: "https://youtu.be/MQ4NKVurnO0?t=2m18s",
+              yt_title: "Tekashi 6ix9ine saved by polite cat",
+              main_quote: "He is a great guy. Alright",
+              trivia: "[\"Meme #78\", \"So fast\", \"#pray for tekashi\" ]"
+            )
+Meme.create!(name: "Howard the Alien",
+              image_name: "howie",
+              rating_name: "meme-79-rating",
+              yt_link: "https://youtu.be/MQ4NKVurnO0?t=4m39s",
+              yt_title: "Tekashi 6ix9ine saved by polite cat",
+              main_quote: "The cousing of cosita is back",
+              trivia: "[\"Meme #79\", \"Alien is creepy af\", \"Pewds dance moves are sick\" ]"
+            )
+ Meme.create!(name: "Ninja Died of Ligma",
+              image_name: "ninja",
+              rating_name: "meme-80-rating",
+              yt_link: "https://youtu.be/OzVZ9TJWxMw?t=0m31s",
+              yt_title: "NINJA GOT LIGMA",
+              main_quote: "Ligma is not a joke",
+              trivia: "[\"Meme #80\", \"What is ligma though?\", \"Where was Poppy giving the news?\" ]"
+            )
+Meme.create!(name: "Roblox Commenters",
+              image_name: "oof",
+              rating_name: "meme-81-rating",
+              yt_link: "https://youtu.be/OzVZ9TJWxMw?t=4m34s",
+              yt_title: "NINJA GOT LIGMA",
+              main_quote: "Delivering the sickest burns of all time",
+              trivia: "[\"Meme #81\", \"Go commit not meme review\" ]"
+            )
+Meme.create!(name: "Black on White",
+              image_name: "piper",
+              rating_name: "meme-82-rating",
+              yt_link: "https://youtu.be/OzVZ9TJWxMw?t=7m16s",
+              yt_title: "NINJA GOT LIGMA",
+              main_quote: "I can't even appreciate demonetization anymore",
+              trivia: "[\"Meme #82\", \"Is this new loss?\"]"
+            )
