@@ -662,3 +662,155 @@ Meme.create!(name: "Black on White",
               main_quote: "I can't even appreciate demonetization anymore",
               trivia: "[\"Meme #82\", \"Is this new loss?\"]"
             )
+Meme.create!(name: "Hot Pockets",
+              image_name: "hot-p",
+              rating_name: "meme-83-rating",
+              yt_link: "https://youtu.be/AY3OX809dzM?t=0m01s",
+              yt_title: "WOULD YOU TRY THIS NEW HOT POCKET????? [MEME REVIEW] 👏 👏#30",
+              main_quote: "It doesn't get more delish than some anime thighs",
+              trivia: "[\"Meme #83\", \"Give me the forbidden hot pockets\"]"
+            )
+Meme.create!(name: "Rigby Has A Better Idea",
+              image_name: "rigby",
+              rating_name: "meme-84-rating",
+              yt_link: "https://youtu.be/AY3OX809dzM?t=3m00s",
+              yt_title: "WOULD YOU TRY THIS NEW HOT POCKET????? [MEME REVIEW] 👏 👏#30",
+              main_quote: "I can do the dance. YES!",
+              trivia: "[\"Meme #84\", \"Pewds Despacito version is better\"]"
+            )
+Meme.create!(name: "How Old Is",
+              image_name: "really-old",
+              rating_name: "meme-85-rating",
+              yt_link: "https://youtu.be/AY3OX809dzM?t=6m15s",
+              yt_title: "WOULD YOU TRY THIS NEW HOT POCKET????? [MEME REVIEW] 👏 👏#30",
+              main_quote: "Alexa this is so sad, play Despacito 5",
+              trivia: "[\"Meme #85\", \"Alexa is the MVP\"]"
+            )
+Meme.create!(name: "Smash Challenger",
+              image_name: "smasher",
+              rating_name: "meme-86-rating",
+              yt_link: "https://youtu.be/jOdZUhGyhIU?t=0m44s",
+              yt_title: "SUPER SMASH MEMES [MEME REVIEW] 👏 👏#31",
+              main_quote: "Everyone that invested in this meme. Sell Sell Sell",
+              trivia: "[\"Meme #86\", \"Second time reviewing this Pewds\"]"
+            )
+Meme.create!(name: "Elkay LZO8",
+              image_name: "elkay",
+              rating_name: "meme-87-rating",
+              yt_link: "https://youtu.be/jOdZUhGyhIU?t=4m55s",
+              yt_title: "SUPER SMASH MEMES [MEME REVIEW] 👏 👏#31",
+              main_quote: "This is not sponsored",
+              trivia: "[\"Meme #87\", \"This is so random\"]"
+            )
+Meme.create!(name: "Florida News Man",
+              image_name: "floreda",
+              rating_name: "meme-88-rating",
+              yt_link: "https://youtu.be/jOdZUhGyhIU?t=6m14s",
+              yt_title: "SUPER SMASH MEMES [MEME REVIEW] 👏 👏#31",
+              main_quote: "Florida, are you ok?",
+              trivia: "[\"Meme #88\", \"Fake News\"]"
+            )
+Meme.create!(name: "Excuse me what the fuck",
+              image_name: "wtf",
+              rating_name: "meme-89-rating",
+              yt_link: "https://youtu.be/08aBvA9U8w4?t=0m24s",
+              yt_title: "Lets talk about why I left (not reupload) MEME REVIEW] 👏 👏#32",
+              main_quote: "This meme definetly deserves to die",
+              trivia: "[\"Meme #89\", \"Pewds is back!\"]"
+            )
+Meme.create!(name: "Fornite Burger",
+              image_name: "forbur",
+              rating_name: "meme-90-rating",
+              yt_link: "https://youtu.be/08aBvA9U8w4?t=3m21s",
+              yt_title: "Lets talk about why I left (not reupload) MEME REVIEW] 👏 👏#32",
+              main_quote: "This is very important. Are you writing this down?",
+              trivia: "[\"Meme #90\", \"Is this where Pewds runs out of memes\"]"
+            )
+Meme.create!(name: "Close your eyes Bro",
+              image_name: "bro",
+              rating_name: "meme-91-rating",
+              yt_link: "https://youtu.be/08aBvA9U8w4?t=5m54s",
+              yt_title: "Lets talk about why I left (not reupload) MEME REVIEW] 👏 👏#32",
+              main_quote: "Alexa, can we cast obsidian?",
+              trivia: "[\"Meme #91\", \"Where are the ratings Pewds\"]"
+            )                                                        
+Meme.create!(name: "Johny Johny Yes Papa",
+              image_name: "garbage",
+              rating_name: "meme-92-rating",
+              yt_link: "https://youtu.be/7a-n8hELH24?t=0m07s",
+              yt_title: "YES PAPA MEME EXPOSED",
+              main_quote: "I am here to save the universe goddammit",
+              trivia: "[\"Meme #92\", \"I don't get why this got so viral\", \"I am glad it was taken down\", \"You have no integrity Vox\"]"
+            )
+Meme.create!(name: "Let Me Guess, Your Home?",
+              image_name: "thanoshome",
+              rating_name: "meme-93-rating",
+              yt_link: "https://youtu.be/7a-n8hELH24?t=7m51s",
+              yt_title: "YES PAPA MEME EXPOSED",
+              main_quote: "Another Marvel meme. How long has it been?",
+              trivia: "[\"Meme #93\",\"Not long enough\", \"Thanos is never leaving\"]"
+            )
+Meme.create!(name: "Ben Shapiro DESTROYS Liberals",
+              image_name: "bens",
+              rating_name: "meme-94-rating",
+              yt_link: "https://youtu.be/7a-n8hELH24?t=9m29s",
+              yt_title: "YES PAPA MEME EXPOSED",
+              main_quote: "You just go trolled libtard",
+              trivia: "[\"Meme #94\", \"Dance Shapiro dance\",\"Where are the RATINGS Felix\"]"
+            )
+Meme.create!(name: "Thanos Car",
+              image_name: "thanoscar",
+              rating_name: "meme-95-rating",
+              yt_link: "https://youtu.be/0ERp2aVIHTA?t=1m42s",
+              yt_title: "THANOS CAR THANOS CAR THANOS CAR THANOS CAR THANOS CAR THANOS CAR",
+              main_quote: "If you have invested in Thanos meme, sell now",
+              trivia: "[\"Meme #95\", \"Marvel is taking over the memes\"]"
+            )   
+Meme.create!(name: "Let Me Guess Your Home?",
+              image_name: "thanoshome",
+              rating_name: "meme-96-rating",
+              yt_link: "https://youtu.be/0ERp2aVIHTA?t=4m01s",
+              yt_title: "THANOS CAR THANOS CAR THANOS CAR THANOS CAR THANOS CAR THANOS CAR",
+              main_quote: "It amazes me and upsets me at the exact same time",
+              trivia: "[\"Meme #96\", \"This should be called meme re-review\"]"
+            )  
+Meme.create!(name: "Awesome Popcorn Chicken",
+              image_name: "popcorn",
+              rating_name: "meme-97-rating",
+              yt_link: "https://youtu.be/0ERp2aVIHTA?t=5m34s",
+              yt_title: "THANOS CAR THANOS CAR THANOS CAR THANOS CAR THANOS CAR THANOS CAR",
+              main_quote: "Watch out popcorn chicken nooooo",
+              trivia: "[\"Meme #97\", \"Why Pewds why\"]"
+            )  
+Meme.create!(name: "Nike Sacrifice",
+              image_name: "nike",
+              rating_name: "meme-98-rating",
+              yt_link: "https://youtu.be/0ERp2aVIHTA?t=9m38s",
+              yt_title: "THANOS CAR THANOS CAR THANOS CAR THANOS CAR THANOS CAR THANOS CAR",
+              main_quote: "This is not Pewnews Felix, remember",
+              trivia: "[\"Meme #98\", \"We need more memes\"]"
+            )  
+Meme.create!(name: "Axel Voss guy",
+              image_name: "av",
+              rating_name: "meme-99-rating",
+              yt_link: "https://youtu.be/x4aD_cJAoJE?t=1m01s",
+              yt_title: "This video is blocked.",
+              main_quote: "Thank you, EU",
+              trivia: "[\"Meme #99\", \"#jointheresistance\"]"
+            )  
+Meme.create!(name: "Bongo Cat",
+              image_name: "boncat",
+              rating_name: "meme-100-rating",
+              yt_link: "https://youtu.be/x4aD_cJAoJE?t=4m28s",
+              yt_title: "This video is blocked.",
+              main_quote: "Bongo Cat is the greatest meme since Ugandan Knuckles",
+              trivia: "[\"Meme #100\", \"Perfect Cat\"]"
+            )       
+Meme.create!(name: "Florence Hurricane",
+              image_name: "florence",
+              rating_name: "meme-101-rating",
+              yt_link: "https://youtu.be/x4aD_cJAoJE?t=9m00s",
+              yt_title: "This video is blocked.",
+              main_quote: "I'm laughing at the memes, not the disaster",
+              trivia: "[\"Meme #101\", \"Where are the sharks\"]"
+            )                                                                                       
