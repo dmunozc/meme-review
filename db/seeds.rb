@@ -813,4 +813,28 @@ Meme.create!(name: "Florence Hurricane",
               yt_title: "This video is blocked.",
               main_quote: "I'm laughing at the memes, not the disaster",
               trivia: "[\"Meme #101\", \"Where are the sharks\"]"
-            )                                                                                       
+            )  
+Meme.create!(name: "Bowsette",
+              image_name: "bowsette",
+              rating_name: "meme-102-rating",
+              yt_link: "https://youtu.be/B7q4YsqsGyE?t=0m22s",
+              yt_title: "People are freaking out over Bowsette... and here's why",
+              main_quote: "You nasty. I like that though",
+              trivia: "[\"Meme #102\", \"Hail to the queen\"]"
+            )         
+Meme.create!(name: "M14 vs Olympia Gang",
+              image_name: "m14",
+              rating_name: "meme-103-rating",
+              yt_link: "https://youtu.be/B7q4YsqsGyE?t=5m33s",
+              yt_title: "People are freaking out over Bowsette... and here's why",
+              main_quote: "I'm not a nerd. I don't play videogames",
+              trivia: "[\"Meme #103\", \"M14 4ever\", \"This post was made by 9 year old gang\"]"
+            )
+Meme.create!(name: "Netflix Adaptation",
+              image_name: "netflix",
+              rating_name: "meme-104-rating",
+              yt_link: "https://youtu.be/B7q4YsqsGyE?t=8m07s",
+              yt_title: "People are freaking out over Bowsette... and here's why",
+              main_quote: "Screw you Netflix",
+              trivia: "[\"Meme #104\", \"Who even pays for Netflix anymore?\"]"
+            )                                                                     
