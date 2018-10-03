@@ -837,4 +837,20 @@ Meme.create!(name: "Netflix Adaptation",
               yt_title: "People are freaking out over Bowsette... and here's why",
               main_quote: "Screw you Netflix",
               trivia: "[\"Meme #104\", \"Who even pays for Netflix anymore?\"]"
-            )                                                                     
+            )     
+Meme.create!(name: "Moth",
+              image_name: "moth",
+              rating_name: "meme-105-rating",
+              yt_link: "https://youtu.be/q0G-qLlIans?t=3m28s",
+              yt_title: "𝓜𝓸𝓽𝓱 𝓜𝓮𝓶𝓮𝓼",
+              main_quote: "Now I see a moth and I go, that is a sexy moth",
+              trivia: "[\"Meme #105\", \"First ever spooky meme review\",\"Bring me the lämps\"]"
+            )       
+Meme.create!(name: "Tik Tok Cringe",
+              image_name: "verybad",
+              rating_name: "meme-106-rating",
+              yt_link: "https://youtu.be/q0G-qLlIans?t=9m16s",
+              yt_title: "𝓜𝓸𝓽𝓱 𝓜𝓮𝓶𝓮𝓼",
+              main_quote: "Copyright free, Pewdiepie version of this song",
+              trivia: "[\"Meme #106\", \"Keem is not that bad. Change my mind\"]"
+            )                                                                   
