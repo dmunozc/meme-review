@@ -853,4 +853,28 @@ Meme.create!(name: "Tik Tok Cringe",
               yt_title: "𝓜𝓸𝓽𝓱 𝓜𝓮𝓶𝓮𝓼",
               main_quote: "Copyright free, Pewdiepie version of this song",
               trivia: "[\"Meme #106\", \"Keem is not that bad. Change my mind\"]"
-            )                                                                   
+            )     
+Meme.create!(name: "Skeletons",
+              image_name: "skeleton",
+              rating_name: "meme-107-rating",
+              yt_link: "https://youtu.be/0Pl_m4IB9Mc?t=1m01s",
+              yt_title: "This video was made by MAGENTA GANG",
+              main_quote: "Gracias señor esqueleto",
+              trivia: "[\"Meme #107\", \"#1 on trending bois\"]"
+            )   
+Meme.create!(name: "Sans",
+              image_name: "sans",
+              rating_name: "meme-108-rating",
+              yt_link: "https://youtu.be/0Pl_m4IB9Mc?t=5m35s",
+              yt_title: "This video was made by MAGENTA GANG",
+              main_quote: "Sans memes are going to save Spooktober",
+              trivia: "[\"Meme #108\", \"Sans + Fortnite = Success\"]"
+            ) 
+Meme.create!(name: "I need magenta",
+              image_name: "magenta",
+              rating_name: "meme-109-rating",
+              yt_link: "https://youtu.be/0Pl_m4IB9Mc?t=8m49s",
+              yt_title: "This video was made by MAGENTA GANG",
+              main_quote: "I wanna know the science",
+              trivia: "[\"Meme #109\", \"Big Printer only wants our money\"]"
+            )                                                                    
