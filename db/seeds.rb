@@ -877,4 +877,173 @@ Meme.create!(name: "I need magenta",
               yt_title: "This video was made by MAGENTA GANG",
               main_quote: "I wanna know the science",
               trivia: "[\"Meme #109\", \"Big Printer only wants our money\"]"
-            )                                                                    
+            )  
+Meme.create!(name: "TikTok Bullying",
+              image_name: "tiktok",
+              rating_name: "meme-110-rating",
+              yt_link: "https://www.youtube.com/watch?v=MMSzuqd9f68&t=1m31s",
+              yt_title: "BIRDS. AREN'T. REAL. [MEME REVIEW] 👏 👏#39",
+              main_quote: "Bless TikTok memes",
+              trivia: "[\"Meme #110\", \"Bullying kid was not on rewind\"]"
+            )  
+Meme.create!(name: "Venom",
+              image_name: "venom",
+              rating_name: "meme-111-rating",
+              yt_link: "https://www.youtube.com/watch?v=MMSzuqd9f68&t=3m22s",
+              yt_title: "BIRDS. AREN'T. REAL. [MEME REVIEW] 👏 👏#39",
+              main_quote: "I make shitty memes",
+              trivia: "[\"Meme #111\", \"Markiplier as Venom for the win\"]"
+            ) 
+ Meme.create!(name: "Evolution time",
+              image_name: "evotime",
+              rating_name: "meme-112-rating",
+              yt_link: "https://www.youtube.com/watch?v=MMSzuqd9f68&t=7m00s",
+              yt_title: "BIRDS. AREN'T. REAL. [MEME REVIEW] 👏 👏#39",
+              main_quote: "I haven't washed my har",
+              trivia: "[\"Meme #112\", \"Killing memes time\"]"
+            )    
+Meme.create!(name: "Birds aren't real",
+              image_name: "birds",
+              rating_name: "meme-113-rating",
+              yt_link: "https://www.youtube.com/watch?v=MMSzuqd9f68&t=9m24s",
+              yt_title: "BIRDS. AREN'T. REAL. [MEME REVIEW] 👏 👏#39",
+              main_quote: "How deep does this go?",
+              trivia: "[\"Meme #113\", \"NSA is behind this\"]"
+            )  
+Meme.create!(name: "NPC",
+              image_name: "npc",
+              rating_name: "meme-114-rating",
+              yt_link: "https://www.youtube.com/watch?v=MMSzuqd9f68&t=11m12s",
+              yt_title: "BIRDS. AREN'T. REAL. [MEME REVIEW] 👏 👏#39",
+              main_quote: "I bet you can't even pass the carpet tutorial",
+              trivia: "[\"Meme #114\", \"Is PewDiePie the real Gloria Borger?\"]"
+            ) 
+ Meme.create!(name: "Suprised Pikachu",
+              image_name: "pikachu",
+              rating_name: "meme-115-rating",
+              yt_title: "Okay, This Is Epic ( Bonus Meme ft. Ben Shapiro) [MEME REVIEW] 👏 👏#40",
+              yt_link: "https://www.youtube.com/watch?v=HBDNbpWSUx8&t=2m56s",
+              main_quote: "Elon trying to take over memes",
+              trivia: "[\"Meme #115\", \"Elon Musk owns T-Series?\"]"
+            )    
+ Meme.create!(name: "I'm already Tracer",
+              image_name: "tracer",
+              rating_name: "meme-116-rating",
+              yt_title: "Okay, This Is Epic ( Bonus Meme ft. Ben Shapiro) [MEME REVIEW] 👏 👏#40",
+              yt_link: "https://www.youtube.com/watch?v=HBDNbpWSUx8&t=5m58s",
+              main_quote: "Girls aren't videogames",
+              trivia: "[\"Meme #116\", \"I want to be Tracer\"]"
+            )  
+ Meme.create!(name: "BONUS MEME Ben Shapiro",
+              image_name: "memeshapiro",
+              rating_name: "meme-117-rating",
+              yt_title: "Okay, This Is Epic ( Bonus Meme ft. Ben Shapiro) [MEME REVIEW] 👏 👏#40",
+              yt_link: "https://www.youtube.com/watch?v=HBDNbpWSUx8&t=8m38s",
+              main_quote: "So PewDiePie asked me to review some memes",
+              trivia: "[\"Meme #117\", \"Okay, this is epic\", \"Thank you Ben, very cool\"]]"
+            )  
+  Meme.create!(name: "Kowalski, analysis",
+              image_name: "analisis",
+              rating_name: "meme-118-rating",
+              yt_title: "A message to Obama [MEME REVIEW] 👏 👏#41",
+              yt_link: "https://www.youtube.com/watch?v=oJ2IlT9-t00&t=1m09s",
+              main_quote: "It was over before it even begin",
+              trivia: "[\"Meme #118\", \"Weird flex, but not okay\"]"
+            ) 
+Meme.create!(name: "Bruh sound effect #2",
+              image_name: "bruh",
+              rating_name: "meme-119-rating",
+              yt_title: "A message to Obama [MEME REVIEW] 👏 👏#41",
+              yt_link: "https://www.youtube.com/watch?v=oJ2IlT9-t00&t=4m33s",
+              main_quote: "Meme of the year everybody",
+              trivia: "[\"Meme #119\", \"Okay, this is bruh\"]"
+            ) 
+Meme.create!(name: "I'm going to say it",
+              image_name: "nword",
+              rating_name: "meme-120-rating",
+              yt_title: "A message to Obama [MEME REVIEW] 👏 👏#41",
+              yt_link: "https://www.youtube.com/watch?v=oJ2IlT9-t00&t=5m57s",
+              main_quote: "Never say the n-word. Take it from amateur",
+              trivia: "[\"Meme #120\", \"I am going to say bruh\"]"
+            )             
+ Meme.create!(name: "Weird flex, but ok",
+              image_name: "weirdflex",
+              rating_name: "meme-121-rating",
+              yt_title: "A message to Obama [MEME REVIEW] 👏 👏#41",
+              yt_link: "https://www.youtube.com/watch?v=oJ2IlT9-t00&t=6m50s",
+              main_quote: "Well it's the only female that has given me attention",
+              trivia: "[\"Meme #121\", \"Felix, you have weird flex, but ok\"]"
+            )
+ Meme.create!(name: "Crab",
+              image_name: "crab",
+              rating_name: "meme-122-rating",
+              yt_link: "https://www.youtube.com/watch?v=WURdSJTTVwk&t=0m16s",
+              yt_title: "How to hide any real emotions 🦀 [MEME REVIEW] 👏 👏#42",
+              main_quote: "Cannot think of a better track to play on my funeral",
+              trivia: "[\"Meme #122\", \"Obamaisgon\"]"
+            )
+Meme.create!(name: "Master's Blessing",
+              image_name: "masterb",
+              rating_name: "meme-123-rating",
+              yt_link: "https://www.youtube.com/watch?v=WURdSJTTVwk&t=6m37s",
+              yt_title: "How to hide any real emotions 🦀 [MEME REVIEW] 👏 👏#42",
+              main_quote: "We are not running low on memes at all",
+              trivia: "[\"Meme #123\", \"Ben Shapiro + logic and facts\"]"
+            )
+ Meme.create!(name: "They did surgery on a grape",
+              image_name: "grape",
+              rating_name: "meme-124-rating",
+              yt_link: "https://www.youtube.com/watch?v=acLyyBCXDkw&t0m01s",
+              yt_title: "They did surgery on a grape",
+              main_quote: "They did surgery on a grape",
+              trivia: "[\"Meme #124\", \"They did surgery on a grape\"]"
+            )  
+Meme.create!(name: "Big neck guy",
+              image_name: "bigneck",
+              rating_name: "meme-125-rating",
+              yt_link: "https://www.youtube.com/watch?v=acLyyBCXDkw&t4m12s",
+              yt_title: "They did surgery on a grape",
+              main_quote: "He was arrested in Florida!",
+              trivia: "[\"Meme #125\", \"What is wrong with you Florida\"]"
+            ) 
+Meme.create!(name: "Muffin Time covers",
+              image_name: "muffin",
+              rating_name: "meme-126-rating",
+              yt_link: "https://www.youtube.com/watch?v=acLyyBCXDkw&t6m28s",
+              yt_title: "They did surgery on a grape",
+              main_quote: "It's straight up fire bro",
+              trivia: "[\"Meme #126\", \"Wynne needs to make a cover of it\"]"
+            ) 
+Meme.create!(name: "PewDiePie goes outside",
+              image_name: "pdpoutside",
+              rating_name: "meme-127-rating",
+              yt_link: "https://www.youtube.com/watch?v=acLyyBCXDkw&t8m02s",
+              yt_title: "They did surgery on a grape",
+              main_quote: "This is cyberbullying",
+              trivia: "[\"Meme #127\", \"Susan, execute article 13\"]"
+            )         
+ Meme.create!(name: "Sprite cranberry",
+              image_name: "cranb",
+              rating_name: "meme-128-rating",
+              yt_link: "https://www.youtube.com/watch?v=RKBplWbWt8g&t=3m35s",
+              yt_title: "DVD screensaver hits corner?!!!",
+              main_quote: "This is multilayer marketing",
+              trivia: "[\"Meme #128\", \"I want a coke instead\"]"
+            )  
+Meme.create!(name: "Moyai",
+              image_name: "moya",
+              rating_name: "meme-129-rating",
+              yt_link: "https://www.youtube.com/watch?v=RKBplWbWt8g&t=8m24s",
+              yt_title: "DVD screensaver hits corner?!!!",
+              main_quote: "Moyai of course is everywhere",
+              trivia: "[\"Meme #129\", \"🗿\"]"
+            )
+Meme.create!(name: "DVD screensaver hits corner",
+              image_name: "corner",
+              rating_name: "meme-130-rating",
+              yt_link: "https://www.youtube.com/watch?v=RKBplWbWt8g&t=10m58s",
+              yt_title: "DVD screensaver hits corner?!!!",
+              main_quote: "Women cannot see it",
+              trivia: "[\"Meme #130\", \"Nobody has seen it\"]"
+            )
+                                   
