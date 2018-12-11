@@ -15,8 +15,6 @@ gem 'puma', '3.11.4'
 gem 'sass-rails', '5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '4.1.10'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.2.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -28,8 +26,6 @@ gem 'turbolinks', '5.1.1'
 gem 'jbuilder', '2.7.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
- gem 'bcrypt', '3.1.12'
 
 #Added by me
 gem 'faker',                   '1.6.6'
