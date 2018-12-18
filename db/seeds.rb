@@ -1046,4 +1046,27 @@ Meme.create!(name: "DVD screensaver hits corner",
               main_quote: "Women cannot see it",
               trivia: "[\"Meme #130\", \"Nobody has seen it\"]"
             )
-                                   
+Meme.create!(name: "Yobama",
+              image_name: "yobama",
+              rating_name: "meme-131-rating",
+              yt_link: "https://youtu.be/mJ95wsJcBb4?t=0m39s",
+              yt_title: "💖💗💖Yobama 💖💗💖",
+              main_quote: "My god, I am actually kind of aroused",
+              trivia: "[\"Meme #131\", \"Brobama 2020\"]"
+            )
+Meme.create!(name: "That's hot",
+              image_name: "hot",
+              rating_name: "meme-132-rating",
+              yt_link: "https://youtu.be/mJ95wsJcBb4?t=6m07s",
+              yt_title: "💖💗💖Yobama 💖💗💖",
+              main_quote: "They can't be that stupid",
+              trivia: "[\"Meme #132\", \"That's thot\"]"
+            )
+Meme.create!(name: "Gabbie Hanna Monster",
+              image_name: "gabbie",
+              rating_name: "meme-133-rating",
+              yt_link: "https://youtu.be/mJ95wsJcBb4?t=10m47s",
+              yt_title: "💖💗💖Yobama 💖💗💖",
+              main_quote: "Damn, that's deep",
+              trivia: "[\"Meme #133\", \"I would have never guessed that the lyrics mean\"]"
+            )                                              
