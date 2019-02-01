@@ -1069,4 +1069,68 @@ Meme.create!(name: "Gabbie Hanna Monster",
               yt_title: "💖💗💖Yobama 💖💗💖",
               main_quote: "Damn, that's deep",
               trivia: "[\"Meme #133\", \"I would have never guessed that the lyrics mean\"]"
-            )                                              
+            )
+Meme.create!(name: "Instagram Egg",
+              image_name: "egg",
+              rating_name: "meme-134-rating",
+              yt_link: "https://youtu.be/qRuQJ_dnxRs?t=0m31s",
+              yt_title: "Kylie Jenner gets OWNED by an EGG LOL instagram most liked EVER EPIC",
+              main_quote: "Can you imagine getting beaten by an egg?",
+              trivia: "[\"Meme #134\", \"Featuring Gloria Borger\"]"
+            )  
+Meme.create!(name: "Whatcha Got There?",
+              image_name: "smoothie",
+              rating_name: "meme-135-rating",
+              yt_link: "https://youtu.be/qRuQJ_dnxRs?t=3m22s",
+              yt_title: "Kylie Jenner gets OWNED by an EGG LOL instagram most liked EVER EPIC",
+              main_quote: "Can I drink myself?",
+              trivia: "[\"Meme #135\", \"I want to see Felix drinking Gloria Borger\"]"
+            )  
+Meme.create!(name: "James Charles jumpscare",
+              image_name: "jc",
+              rating_name: "meme-136-rating",
+              yt_link: "https://youtu.be/qRuQJ_dnxRs?t=7m46s",
+              yt_title: "Kylie Jenner gets OWNED by an EGG LOL instagram most liked EVER EPIC",
+              main_quote: "James Charles is in every horror movie ever",
+              trivia: "[\"Meme #136\", \"Why so white boi\"]"
+            )  
+Meme.create!(name: "BONUS MEME That's All You Had To Say",
+              image_name: "n-felix",
+              rating_name: "meme-137-rating",
+              yt_link: "https://youtu.be/qRuQJ_dnxRs?t=10m24s",
+              yt_title: "Kylie Jenner gets OWNED by an EGG LOL instagram most liked EVER EPIC",
+              main_quote: "I really want to say the n-word",
+              trivia: "[\"Meme #137\", \"Pewds needs the n-word pass\"]"
+            )  
+Meme.create!(name: "Choking Sasuke",
+              image_name: "sasuke",
+              rating_name: "meme-138-rating",
+              yt_link: "https://youtu.be/OtRLwkj8Dp4?t=0m47 s",
+              yt_title: "Sasuke Memes are NOT OK",
+              main_quote: "We need to hold men accountable",
+              trivia: "[\"Meme #138\", \"Sasuke must die\"]"
+            )     
+Meme.create!(name: "Airpods and Waves",
+              image_name: "airp",
+              rating_name: "meme-139-rating",
+              yt_link: "https://youtu.be/OtRLwkj8Dp4?t=4m08s",
+              yt_title: "Sasuke Memes are NOT OK",
+              main_quote: "Cultural appropiation",
+              trivia: "[\"Meme #139\", \"Sweet waves Pewds\"]"
+            ) 
+Meme.create!(name: "Hamster calls",
+              image_name: "hams",
+              rating_name: "meme-140-rating",
+              yt_link: "https://youtu.be/OtRLwkj8Dp4?t=8m10s",
+              yt_title: "Sasuke Memes are NOT OK",
+              main_quote: "Memes are just getting worse every year",
+              trivia: "[\"Meme #140\", \"Jumpscare hamster\"]"
+            ) 
+Meme.create!(name: "BONUS MEME Cereal guy",
+              image_name: "cerealguy",
+              rating_name: "meme-141-rating",
+              yt_link: "https://youtu.be/OtRLwkj8Dp4?t=10m40s",
+              yt_title: "Sasuke Memes are NOT OK",
+              main_quote: "We have time for bonus meme everybody",
+              trivia: "[\"Meme #141\", \"We need three bonus memes in a row\"]"
+            )                      
