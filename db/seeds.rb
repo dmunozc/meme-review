@@ -1133,4 +1133,136 @@ Meme.create!(name: "BONUS MEME Cereal guy",
               yt_title: "Sasuke Memes are NOT OK",
               main_quote: "We have time for bonus meme everybody",
               trivia: "[\"Meme #141\", \"We need three bonus memes in a row\"]"
-            )                      
+            )  
+            
+            
+Meme.create!(name: "Shaggy at 1%",
+              image_name: "shaggy",
+              rating_name: "meme-142-rating",
+              yt_link: "https://youtu.be/LyairRpLYFw?t=0m15s",
+              yt_title: "The ONLY one who can DEFEAT SHAGGY! [MEME REVIEW] 👏 👏#48",
+              main_quote: "Nanda kore wa?",
+              trivia: "[\"Meme #14\", \"Shaggy was taken by ISIS\"]"
+            )  
+Meme.create!(name: "Moto Moto",
+              image_name: "moto",
+              rating_name: "meme-143-rating",
+              yt_link: "https://youtu.be/LyairRpLYFw?t=6m44s",
+              yt_title: "The ONLY one who can DEFEAT SHAGGY! [MEME REVIEW] 👏 👏#48",
+              main_quote: "One man more chungus than the big chungus",
+              trivia: "[\"Meme #143\", \"I think moto moto likes me\"]"
+            )  
+ Meme.create!(name: "PEWDIE MEME Gillette",
+              image_name: "gillette",
+              rating_name: "meme-144-rating",
+              yt_link: "https://youtu.be/LyairRpLYFw?t=11m07s",
+              yt_title: "The ONLY one who can DEFEAT SHAGGY! [MEME REVIEW] 👏 👏#48",
+              main_quote: "Keep Subscribing",
+              trivia: "[\"Meme #144\", \"First PewDie meme ever\"]"
+            )                                   
+            
+ Meme.create!(name: "21 Savage British",
+              image_name: "21sav",
+              rating_name: "meme-145-rating",
+              yt_link: "https://youtu.be/DZrXDDMTg1w?t=1m12s",
+              yt_title: "bad news [MEME REVIEW] 👏 👏#49",
+              main_quote: "They were funny for like half a day",
+              trivia: "[\"Meme #145\", \"Want some tea mate?\"]"
+            ) 
+ Meme.create!(name: "Anti Vaxxers",
+              image_name: "antivax",
+              rating_name: "meme-146-rating",
+              yt_link: "https://youtu.be/DZrXDDMTg1w?t=4m52s",
+              yt_title: "bad news [MEME REVIEW] 👏 👏#49",
+              main_quote: "Are you guys vaccinated?",
+              trivia: "[\"Meme #146\", \"You just died from tetanus\"]"
+            ) 
+  Meme.create!(name: "Airport Security Water",
+              image_name: "airwater",
+              rating_name: "meme-147-rating",
+              yt_link: "https://youtu.be/DZrXDDMTg1w?t=7m31s",
+              yt_title: "bad news [MEME REVIEW] 👏 👏#49",
+              main_quote: "They are going to take my water",
+              trivia: "[\"Meme #147\", \"TSA = T-series\"]"
+            ) 
+  Meme.create!(name: "Mars Rover",
+              image_name: "rover",
+              rating_name: "meme-148-rating",
+              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=0m40s",
+              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+              main_quote: "Mars RoOoOover",
+              trivia: "[\"Meme #148\", \"It is mars rOver Felix\"]"
+            ) 
+  Meme.create!(name: "Gonna cry?",
+              image_name: "goncry",
+              rating_name: "meme-149-rating",
+              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=5m19s",
+              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+              main_quote: "Sorry Hamster-san",
+              trivia: "[\"Meme #149\", \"I am not going to cry\"]"
+            ) 
+   Meme.create!(name: "Let me in!",
+              image_name: "letmein",
+              rating_name: "meme-150-rating",
+              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=7m30s",
+              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+              main_quote: "Just life just became more miserable",
+              trivia: "[\"Meme #150\", \"Let out Tekashi 69\"]"
+            ) 
+   Meme.create!(name: "Will Smith blue",
+              image_name: "aladdin",
+              rating_name: "meme-151-rating",
+              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=9m28s",
+              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+              main_quote: "It's just funny to watch Will Smith",
+              trivia: "[\"Meme #151\", \"It's aladdin time\"]"
+            )  
+      Meme.create!(name: "BONUS MEME Elon Musk",
+              image_name: "elonmusk",
+              rating_name: "meme-152-rating",
+              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=13m35s",
+              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+              main_quote: "Good luck with this footage",
+              trivia: "[\"Meme #152\", \"Hi Elon!\"]"
+            )             
+                                                           
+ Meme.create!(name: "Steve Irwin vs PETA",
+              image_name: "peta",
+              rating_name: "meme-153-rating",
+              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=0m36s",
+              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+              main_quote: "The meme community is not happy about this",
+              trivia: "[\"Meme #153\", \"Shame on you PETA\"]"
+            )  
+  Meme.create!(name: "Elon Musk",
+              image_name: "elonmeme",
+              rating_name: "meme-154-rating",
+              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=3m42s",
+              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+              main_quote: "It is not funny ok?",
+              trivia: "[\"Meme #154\", \"Felix Shellberg\"]"
+            )  
+  Meme.create!(name: "What the fuck is that even supposed to mean",
+              image_name: "wtfpdp",
+              rating_name: "meme-155-rating",
+              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=6m40s",
+              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+              main_quote: "Another PewDiePie meme",
+              trivia: "[\"Meme #155\", \"Great meme\"]"
+            )  
+  Meme.create!(name: "Ricardo",
+              image_name: "ric",
+              rating_name: "meme-156-rating",
+              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=7m43s",
+              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+              main_quote: "Ricardo is stronger",
+              trivia: "[\"Meme #156\", \"Ricard is bae\"]"
+            )           
+   Meme.create!(name: "BONUS MEME Mr. Beast",
+              image_name: "beastmode",
+              rating_name: "meme-157-rating",
+              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=10m21s",
+              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+              main_quote: "",
+              trivia: "[\"Meme #157\", \"Thank you Mr. Beast, very cool\"]"
+            )                                                                              
