@@ -9,21 +9,21 @@
       <picture>
         <source
           media="(min-width: 601px)"
-          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_medium_1x.webp")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_medium_2x.webp")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_medium_1x.webp"%> 1x, <%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_medium_2x.webp"%> 2x"
           type="image/webp">
         <source
           media="(min-width: 601px)"
-          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_medium_1x.jpg")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_medium_2x.jpg")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_medium_1x.jpg"%> 1x, <%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_medium_2x.jpg"%> 2x"
           type="image/jpeg">
         <source
           media="(max-width: 600px)"
-          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_small_1x.webp")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_small_2x.webp")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_small_1x.webp"%> 1x, <%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_small_2x.webp"%> 2x"
           type="image/webp">
         <source
           media="(max-width: 600px)"
-          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-main/" + meme.image_name + "_small_1x.jpg")%> 1x, <%= asset_url("meme-main/" + meme.image_name + "_small_2x.jpg")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_small_1x.jpg"%> 1x, <%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_small_2x.jpg"%> 2x"
           type="image/jpeg">
-        <img class="<%= lazy == false ? "" : "lazyload"%> responsive-img image-main" <%= lazy == false ? "" : "data-"%>src="<%= asset_url("meme-main/" + meme.image_name + "_medium_1x.jpg")%>" alt="<%= meme.image_name%>" />
+        <img class="<%= lazy == false ? "" : "lazyload"%> responsive-img image-main" <%= lazy == false ? "" : "data-"%>src="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-main/" + meme.image_name + "_medium_1x.jpg"%>" alt="<%= meme.image_name%>" />
       </picture>
     </div>
     <div class="card-content">
@@ -32,21 +32,21 @@
       <picture>
         <source
           media="(min-width: 601px)"
-          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_medium_1x.webp")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_medium_2x.webp")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_medium_1x.webp"%> 1x, <%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_medium_2x.webp"%> 2x"
           type="image/webp">
         <source
           media="(min-width: 601px)"
-          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_medium_1x.png")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_medium_2x.png")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_medium_1x.png"%> 1x, <%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_medium_2x.png"%> 2x"
           type="image/png">
         <source
           media="(max-width: 600px)"
-          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_small_1x.webp")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_small_2x.webp")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_small_1x.webp"%> 1x, <%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_small_2x.webp"%> 2x"
           type="image/webp">
         <source
           media="(max-width: 600px)"
-          <%= lazy == false ? "" : "data-"%>srcset="<%= asset_url("meme-rating/" + meme.rating_name + "_small_1x.png")%> 1x, <%= asset_url("meme-rating/" + meme.rating_name + "_small_2x.png")%> 2x"
+          <%= lazy == false ? "" : "data-"%>srcset="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_small_1x.png"%> 1x, <%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_small_2x.png"%> 2x"
           type="image/png">
-        <img class="<%= lazy == false ? "" : "lazyload"%> responsive-img image-rating center" <%= lazy == false ? "" : "data-"%>src="<%= asset_url("meme-rating/" + meme.rating_name + "_medium_1x.png")%>" alt="<%= meme.rating_name%>" />
+        <img class="<%= lazy == false ? "" : "lazyload"%> responsive-img image-rating center" <%= lazy == false ? "" : "data-"%>src="<%= "https://memereview-main.s3-us-west-2.amazonaws.com/meme-rating/" + meme.rating_name + "_medium_1x.png"%>" alt="<%= meme.rating_name%>" />
       </picture>
     </div>
     <div class="card-action">
