@@ -42,9 +42,13 @@ function onActivate(event) {
 }
 
 function onFetch(event) {
-var requestURL = new URL(event.request.url);
-
-  if (requestURL.origin == location.origin) {
+  var req = event.request;
+  var requestURL = new URL(req.url);
+  //if(req.headers.get("Accept").indexOf('image') !== -1) {
+  //  resourceType = 'image';
+  //  console.log(requestURL)
+  //}
+  if (requestURL.origin == location.origin || requestURL.origin == "https://memereview-main.s3-us-west-2.amazonaws.com") {
     if (event.request.method != 'POST') {
       if (/\/\?page/.test(requestURL.href)) {
         event.respondWith(
@@ -75,6 +79,7 @@ var requestURL = new URL(event.request.url);
       }
     }
   }
+  
 }
 
 self.addEventListener('install', onInstall);
