@@ -1153,116 +1153,344 @@ Meme.create!(name: "Moto Moto",
               trivia: "[\"Meme #143\", \"I think moto moto likes me\"]"
             )  
  Meme.create!(name: "PEWDIE MEME Gillette",
-              image_name: "gillette",
-              rating_name: "meme-144-rating",
-              yt_link: "https://youtu.be/LyairRpLYFw?t=11m07s",
-              yt_title: "The ONLY one who can DEFEAT SHAGGY! [MEME REVIEW] 👏 👏#48",
-              main_quote: "Keep Subscribing",
-              trivia: "[\"Meme #144\", \"First PewDie meme ever\"]"
+            image_name: "gillette",
+            rating_name: "meme-144-rating",
+            yt_link: "https://youtu.be/LyairRpLYFw?t=11m07s",
+            yt_title: "The ONLY one who can DEFEAT SHAGGY! [MEME REVIEW] 👏 👏#48",
+            main_quote: "Keep Subscribing",
+            trivia: "[\"Meme #144\", \"First PewDie meme ever\"]"
             )                                   
             
  Meme.create!(name: "21 Savage British",
-              image_name: "21sav",
-              rating_name: "meme-145-rating",
-              yt_link: "https://youtu.be/DZrXDDMTg1w?t=1m12s",
-              yt_title: "bad news [MEME REVIEW] 👏 👏#49",
-              main_quote: "They were funny for like half a day",
-              trivia: "[\"Meme #145\", \"Want some tea mate?\"]"
+            image_name: "21sav",
+            rating_name: "meme-145-rating",
+            yt_link: "https://youtu.be/DZrXDDMTg1w?t=1m12s",
+            yt_title: "bad news [MEME REVIEW] 👏 👏#49",
+            main_quote: "They were funny for like half a day",
+            trivia: "[\"Meme #145\", \"Want some tea mate?\"]"
             ) 
  Meme.create!(name: "Anti Vaxxers",
-              image_name: "antivax",
-              rating_name: "meme-146-rating",
-              yt_link: "https://youtu.be/DZrXDDMTg1w?t=4m52s",
-              yt_title: "bad news [MEME REVIEW] 👏 👏#49",
-              main_quote: "Are you guys vaccinated?",
-              trivia: "[\"Meme #146\", \"You just died from tetanus\"]"
-            ) 
-  Meme.create!(name: "Airport Security Water",
-              image_name: "airwater",
-              rating_name: "meme-147-rating",
-              yt_link: "https://youtu.be/DZrXDDMTg1w?t=7m31s",
-              yt_title: "bad news [MEME REVIEW] 👏 👏#49",
-              main_quote: "They are going to take my water",
-              trivia: "[\"Meme #147\", \"TSA = T-series\"]"
-            ) 
-  Meme.create!(name: "Mars Rover",
-              image_name: "rover",
-              rating_name: "meme-148-rating",
-              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=0m40s",
-              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
-              main_quote: "Mars RoOoOover",
-              trivia: "[\"Meme #148\", \"It is mars rOver Felix\"]"
-            ) 
-  Meme.create!(name: "Gonna cry?",
-              image_name: "goncry",
-              rating_name: "meme-149-rating",
-              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=5m19s",
-              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
-              main_quote: "Sorry Hamster-san",
-              trivia: "[\"Meme #149\", \"I am not going to cry\"]"
-            ) 
-   Meme.create!(name: "Let me in!",
-              image_name: "letmein",
-              rating_name: "meme-150-rating",
-              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=7m30s",
-              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
-              main_quote: "Just life just became more miserable",
-              trivia: "[\"Meme #150\", \"Let out Tekashi 69\"]"
-            ) 
-   Meme.create!(name: "Will Smith blue",
-              image_name: "aladdin",
-              rating_name: "meme-151-rating",
-              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=9m28s",
-              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
-              main_quote: "It's just funny to watch Will Smith",
-              trivia: "[\"Meme #151\", \"It's aladdin time\"]"
-            )  
-      Meme.create!(name: "BONUS MEME Elon Musk",
-              image_name: "elonmusk",
-              rating_name: "meme-152-rating",
-              yt_link: "https://youtu.be/zpWYQ1YtgnI?t=13m35s",
-              yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
-              main_quote: "Good luck with this footage",
-              trivia: "[\"Meme #152\", \"Hi Elon!\"]"
+            image_name: "antivax",
+            rating_name: "meme-146-rating",
+            yt_link: "https://youtu.be/DZrXDDMTg1w?t=4m52s",
+            yt_title: "bad news [MEME REVIEW] 👏 👏#49",
+            main_quote: "Are you guys vaccinated?",
+            trivia: "[\"Meme #146\", \"You just died from tetanus\"]"
+          ) 
+Meme.create!(name: "Airport Security Water",
+            image_name: "airwater",
+            rating_name: "meme-147-rating",
+            yt_link: "https://youtu.be/DZrXDDMTg1w?t=7m31s",
+            yt_title: "bad news [MEME REVIEW] 👏 👏#49",
+            main_quote: "They are going to take my water",
+            trivia: "[\"Meme #147\", \"TSA = T-series\"]"
+          ) 
+Meme.create!(name: "Mars Rover",
+            image_name: "rover",
+            rating_name: "meme-148-rating",
+            yt_link: "https://youtu.be/zpWYQ1YtgnI?t=0m40s",
+            yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+            main_quote: "Mars RoOoOover",
+            trivia: "[\"Meme #148\", \"It is mars rOver Felix\"]"
+          ) 
+Meme.create!(name: "Gonna cry?",
+            image_name: "goncry",
+            rating_name: "meme-149-rating",
+            yt_link: "https://youtu.be/zpWYQ1YtgnI?t=5m19s",
+            yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+            main_quote: "Sorry Hamster-san",
+            trivia: "[\"Meme #149\", \"I am not going to cry\"]"
+          ) 
+ Meme.create!(name: "Let me in!",
+            image_name: "letmein",
+            rating_name: "meme-150-rating",
+            yt_link: "https://youtu.be/zpWYQ1YtgnI?t=7m30s",
+            yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+            main_quote: "Just life just became more miserable",
+            trivia: "[\"Meme #150\", \"Let out Tekashi 69\"]"
+          ) 
+ Meme.create!(name: "Will Smith blue",
+            image_name: "aladdin",
+            rating_name: "meme-151-rating",
+            yt_link: "https://youtu.be/zpWYQ1YtgnI?t=9m28s",
+            yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+            main_quote: "It's just funny to watch Will Smith",
+            trivia: "[\"Meme #151\", \"It's aladdin time\"]"
+          )  
+    Meme.create!(name: "BONUS MEME Elon Musk",
+            image_name: "elonmusk",
+            rating_name: "meme-152-rating",
+            yt_link: "https://youtu.be/zpWYQ1YtgnI?t=13m35s",
+            yt_title: "Will Smith hosts Meme Review w/ Elon Musk",
+            main_quote: "Good luck with this footage",
+            trivia: "[\"Meme #152\", \"Hi Elon!\"]"
             )             
                                                            
  Meme.create!(name: "Steve Irwin vs PETA",
-              image_name: "peta",
-              rating_name: "meme-153-rating",
-              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=0m36s",
-              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
-              main_quote: "The meme community is not happy about this",
-              trivia: "[\"Meme #153\", \"Shame on you PETA\"]"
-            )  
-  Meme.create!(name: "Elon Musk",
-              image_name: "elonmeme",
-              rating_name: "meme-154-rating",
-              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=3m42s",
-              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
-              main_quote: "It is not funny ok?",
-              trivia: "[\"Meme #154\", \"Felix Shellberg\"]"
-            )  
-  Meme.create!(name: "What the fuck is that even supposed to mean",
-              image_name: "wtfpdp",
-              rating_name: "meme-155-rating",
-              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=6m40s",
-              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
-              main_quote: "Another PewDiePie meme",
-              trivia: "[\"Meme #155\", \"Great meme\"]"
-            )  
-  Meme.create!(name: "Ricardo",
-              image_name: "ric",
-              rating_name: "meme-156-rating",
-              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=7m43s",
-              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
-              main_quote: "Ricardo is stronger",
-              trivia: "[\"Meme #156\", \"Ricard is bae\"]"
-            )           
-   Meme.create!(name: "BONUS MEME Mr. Beast",
-              image_name: "beastmode",
-              rating_name: "meme-157-rating",
-              yt_link: "https://youtu.be/Jkyy4JOu9jE?t=10m21s",
-              yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
-              main_quote: "",
-              trivia: "[\"Meme #157\", \"Thank you Mr. Beast, very cool\"]"
-            )                                                                              
+            image_name: "peta",
+            rating_name: "meme-153-rating",
+            yt_link: "https://youtu.be/Jkyy4JOu9jE?t=0m36s",
+            yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+            main_quote: "The meme community is not happy about this",
+            trivia: "[\"Meme #153\", \"Shame on you PETA\"]"
+          )  
+Meme.create!(name: "Elon Musk",
+            image_name: "elonmeme",
+            rating_name: "meme-154-rating",
+            yt_link: "https://youtu.be/Jkyy4JOu9jE?t=3m42s",
+            yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+            main_quote: "It is not funny ok?",
+            trivia: "[\"Meme #154\", \"Felix Shellberg\"]"
+          )  
+Meme.create!(name: "What the fuck is that even supposed to mean",
+            image_name: "wtfpdp",
+            rating_name: "meme-155-rating",
+            yt_link: "https://youtu.be/Jkyy4JOu9jE?t=6m40s",
+            yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+            main_quote: "Another PewDiePie meme",
+            trivia: "[\"Meme #155\", \"Great meme\"]"
+          )  
+Meme.create!(name: "Ricardo",
+            image_name: "ric",
+            rating_name: "meme-156-rating",
+            yt_link: "https://youtu.be/Jkyy4JOu9jE?t=7m43s",
+            yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+            main_quote: "Ricardo is stronger",
+            trivia: "[\"Meme #156\", \"Ricard is bae\"]"
+          )           
+Meme.create!(name: "BONUS MEME Mr. Beast",
+            image_name: "beastmode",
+            rating_name: "meme-157-rating",
+            yt_link: "https://youtu.be/Jkyy4JOu9jE?t=10m21s",
+            yt_title: "Mr Beasts hosts Meme Review? (he maybe does)",
+            main_quote: "",
+            trivia: "[\"Meme #157\", \"Thank you Mr. Beast, very cool\"]"
+          )          
+Meme.create!(name: "Minecraft",
+            image_name: "minecraft-craft",
+            rating_name: "meme-158-rating",
+            yt_link: "https://youtu.be/a2U5FUV6EfM?t=0m37s",
+            yt_title: "THIS IS HOW YOU LOOK [MEME REVIEW] 👏 👏#52",
+            main_quote: "Peter Griffin will never be Sans",
+            trivia: "[\"Meme #158\", \"Outdated memes edition\"]"
+          )
+Meme.create!(name: "No one:",
+            image_name: "image-players",
+            rating_name: "meme-159-rating",
+            yt_link: "https://youtu.be/a2U5FUV6EfM?t=3m23s",
+            yt_title: "THIS IS HOW YOU LOOK [MEME REVIEW] 👏 👏#52",
+            main_quote: "Number 5. He is ugly and fat",
+            trivia: "[\"Meme #159\", \"Stop attackanizing youtubers\"]"
+          )
+Meme.create!(name: "Unsettled Tom",
+            image_name: "utom",
+            rating_name: "meme-160-rating",
+            yt_link: "https://youtu.be/a2U5FUV6EfM?t=8m29s",
+            yt_title: "THIS IS HOW YOU LOOK [MEME REVIEW] 👏 👏#52",
+            main_quote: "You just drank sperm my dude",
+            trivia: "[\"Meme #160\", \"Tom needs to be stopped\"]"
+          )
+Meme.create!(name: "This is how you look",
+            image_name: "a-clown",
+            rating_name: "meme-161-rating",
+            yt_link: "https://youtu.be/a2U5FUV6EfM?t=10m07s",
+            yt_title: "THIS IS HOW YOU LOOK [MEME REVIEW] 👏 👏#52",
+            main_quote: "Yall a bunch of clowns",
+            trivia: "[\"Meme #161\", \"You are all clowns\"]"
+          )
+
+Meme.create!(name: "Antman and Thanos",
+            image_name: "ass",
+            rating_name: "meme-162-rating",
+            yt_link: "https://youtu.be/tIZLzoqTToc?t=0m42s",
+            yt_title: "How the Marvel Avengers Series Ends (SPOILERS) leak [MEME REVIEW] 👏 👏#53",
+            main_quote: "If this doesn't happen I will be dissapointed",
+            trivia: "[\"Meme #162\", \"Japanese Meme Review\"]"
+          )
+Meme.create!(name: "14 year old girls",
+            image_name: "14-girl",
+            rating_name: "meme-163-rating",
+            yt_link: "https://youtu.be/tIZLzoqTToc?t=7m01s",
+            yt_title: "How the Marvel Avengers Series Ends (SPOILERS) leak [MEME REVIEW] 👏 👏#53",
+            main_quote: "They love sappy shit",
+            trivia: "[\"Meme #163\", \"14 year old girls will cry\"]"
+          ) 
+Meme.create!(name: "I am speed",
+            image_name: "speed",
+            rating_name: "meme-164-rating",
+            yt_link: "https://youtu.be/tIZLzoqTToc?t=10m07s",
+            yt_title: "How the Marvel Avengers Series Ends (SPOILERS) leak [MEME REVIEW] 👏 👏#53",
+            main_quote: "I decide when I'm done",
+            trivia: "[\"Meme #164\", \"I am Sbeve\"]"
+          ) 
+Meme.create!(name: "Blue shirt kids",
+            image_name: "blue-shirts",
+            rating_name: "meme-165-rating",
+            yt_link: "https://youtu.be/tIZLzoqTToc?t=11m55s",
+            yt_title: "How the Marvel Avengers Series Ends (SPOILERS) leak [MEME REVIEW] 👏 👏#53",
+            main_quote: "Next Meme",
+            trivia: "[\"Meme #165\", \"Thank you Blue shirt kids\"]"
+          )  
+Meme.create!(name: "Here's the mf tea",
+            image_name: "mf-tea",
+            rating_name: "meme-166-rating",
+            yt_link: "https://youtu.be/bRG6sy3VaWU?t=2m25s",
+            yt_title: "Here's the mf tea ☕ [MEME REVIEW] 👏 👏#54",
+            main_quote: "You are going to die b",
+            trivia: "[\"Meme #166\", \"Gfuel > tea\"]"
+          )
+
+Meme.create!(name: "Tuxedo Winnie the Pooh",
+            image_name: "tux-poo",
+            rating_name: "meme-167-rating",
+            yt_link: "https://youtu.be/bRG6sy3VaWU?t=5m40s",
+            yt_title: "Here's the mf tea ☕ [MEME REVIEW] 👏 👏#54",
+            main_quote: "It's the exact same meme",
+            trivia: "[\"Meme #167\", \"Old memes\"]"
+          )
+
+Meme.create!(name: "Doulingo bird",
+            image_name: "duo-bird",
+            rating_name: "meme-168-rating",
+            yt_link: "https://youtu.be/bRG6sy3VaWU?t=8m58s",
+            yt_title: "Here's the mf tea ☕ [MEME REVIEW] 👏 👏#54",
+            main_quote: "Duolingo for some reason it's a meme",
+            trivia: "[\"Meme #168\", \"The bird is forcing me to do this site\"]"
+          )        
+Meme.create!(name: "Spicy Shaq",
+            image_name: "shaq",
+            rating_name: "meme-169-rating",
+            yt_link: "https://youtu.be/bRG6sy3VaWU?t=10m50s",
+            yt_title: "Here's the mf tea ☕ [MEME REVIEW] 👏 👏#54",
+            main_quote: "At least this I can appreciate",
+            trivia: "[\"Meme #169\", \"The mf wings\"]"
+          )           
+Meme.create!(name: "Endgame spoilers",
+            image_name: "endgame",
+            rating_name: "meme-170-rating",
+            yt_link: "https://youtu.be/DCkydkdhL8M?t=0m32s",
+            yt_title: "How to AVOID Avengers Endgame Spoilers",
+            main_quote: "Just spread a bunch of lies",
+            trivia: "[\"Meme #170\", \"Ben shapiro destroys Thanos with FACTS and LOGIC\"]"
+          )   
+Meme.create!(name: "Quieres",
+            image_name: "quieres",
+            rating_name: "meme-171-rating",
+            yt_link: "https://youtu.be/DCkydkdhL8M?t=5m08s",
+            yt_title: "How to AVOID Avengers Endgame Spoilers",
+            main_quote: "The dog says quieres",
+            trivia: "[\"Meme #171\", \"No quiero\"]"
+          )
+Meme.create!(name: "X at home",
+            image_name: "at-home",
+            rating_name: "meme-172-rating",
+            yt_link: "https://youtu.be/DCkydkdhL8M?t=7m28s",
+            yt_title: "How to AVOID Avengers Endgame Spoilers",
+            main_quote: "It's funny because everyone can relate",
+            trivia: "[\"Meme #172\", \"Oh Alabama\"]"
+          )
+Meme.create!(name: "Skyrim",
+            image_name: "skyrim",
+            rating_name: "meme-173-rating",
+            yt_link: "https://youtu.be/DCkydkdhL8M?t=11m02s",
+            yt_title: "How to AVOID Avengers Endgame Spoilers",
+            main_quote: "My favorite Skyrim memes",
+            trivia: "[\"Meme #173\", \"Fus ro dah\"]"
+          )
+Meme.create!(name: "Projared",
+            image_name: "jared",
+            rating_name: "meme-174-rating",
+            yt_link: "https://youtu.be/WOSC6uGtBFw?t=0m17s",
+            yt_title: "Projared is a Gamer",
+            main_quote: "I guess he got the last laugh",
+            trivia: "[\"Meme #174\", \"Gamers rise up\"]"
+          )  
+Meme.create!(name: "Sonic fix",
+            image_name: "sonix",
+            rating_name: "meme-175-rating",
+            yt_link: "https://youtu.be/WOSC6uGtBFw?t=3m38s",
+            yt_title: "Projared is a Gamer",
+            main_quote: "Still better than the original",
+            trivia: "[\"Meme #175\", \"Sonichu\"]"
+          )   
+Meme.create!(name: "My Therapist",
+            image_name: "therapist",
+            rating_name: "meme-176-rating",
+            yt_link: "https://youtu.be/WOSC6uGtBFw?t=5m06s",
+            yt_title: "Projared is a Gamer",
+            main_quote: "Incel Elephant",
+            trivia: "[\"Meme #176\", \"He can't hurt you\"]"
+          )   
+Meme.create!(name: "Scandinavian People",
+            image_name: "felix",
+            rating_name: "meme-177-rating",
+            yt_link: "https://youtu.be/WOSC6uGtBFw?t=7m01s",
+            yt_title: "Projared is a Gamer",
+            main_quote: "Racism. OK",
+            trivia: "[\"Meme #177\", \"Björn Borg\"]"
+          )    
+Meme.create!(name: "Bart Simpson",
+            image_name: "bartsim",
+            rating_name: "meme-178-rating",
+            yt_link: "https://youtu.be/96SZCm0RudE?t=0m23s",
+            yt_title: "Would you press?",
+            main_quote: "Are you freaking telling me",
+            trivia: "[\"Meme #178\", \"El coco\"]"
+          ) 
+Meme.create!(name: "Hamburger",
+            image_name: "hamb",
+            rating_name: "meme-179-rating",
+            yt_link: "https://youtu.be/96SZCm0RudE?t=2m42s",
+            yt_title: "Would you press?",
+            main_quote: "That relatable moment",
+            trivia: "[\"Meme #179\", \"Hamburger coin went up\"]"
+          )        
+
+Meme.create!(name: "Would you press?",
+            image_name: "button",
+            rating_name: "meme-180-rating",
+            yt_link: "https://youtu.be/96SZCm0RudE?t=6m50s",
+            yt_title: "Would you press?",
+            main_quote: "Absolute Win",
+            trivia: "[\"Meme #180\", \"I would press\"]"
+          ) 
+Meme.create!(name: "Bowling Alley Screen",
+            image_name: "bowling",
+            rating_name: "meme-181-rating",
+            yt_link: "https://youtu.be/96SZCm0RudE?t=8m13s",
+            yt_title: "Would you press?",
+            main_quote: "More fun looking at the screen",
+            trivia: "[\"Meme #181\", \"Those animators\"]"
+          ) 
+Meme.create!(name: "LightSkinMonte",
+            image_name: "lightskinmonte",
+            rating_name: "meme-182-rating",
+            yt_link: "https://youtu.be/96SZCm0RudE?t=10m37s",
+            yt_title: "Would you press?",
+            main_quote: "I think we can all relate",
+            trivia: "[\"Meme #182\", \"That mf Mary Ham\"]"
+          ) 
+Meme.create!(name: "Me and the Boys",
+            image_name: "boys",
+            rating_name: "meme-183-rating",
+            yt_link: "https://youtu.be/jgn00qHdEOg?t=0m56s",
+            yt_title: "Me and the Boys (hosted by Mary Ham)",
+            main_quote: "This is so sad",
+            trivia: "[\"Meme #183\", \"Bring back Poppy Gloria\"]"
+          )     
+Meme.create!(name: "Well boys we did it",
+            image_name: "wellboys",
+            rating_name: "meme-184-rating",
+            yt_link: "https://youtu.be/jgn00qHdEOg?t=4m15s",
+            yt_title: "Me and the Boys (hosted by Mary Ham)",
+            main_quote: "The boys did it",
+            trivia: "[\"Meme #184\", \"Bring back Poppy Gloria\"]"
+          )
+Meme.create!(name: "Boys in locker room",
+            image_name: "locker",
+            rating_name: "meme-185-rating",
+            yt_link: "https://youtu.be/jgn00qHdEOg?t=6m21s",
+            yt_title: "Me and the Boys (hosted by Mary Ham)",
+            main_quote: "We dont want your kind here",
+            trivia: "[\"Meme #185\", \"Mary Ham is dead to us\"]"
+          )
