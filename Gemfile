@@ -36,7 +36,7 @@ gem 'will_paginate', '3.1.0'
 gem 'json', '~> 2.3.0'
 gem 'materialize-sass', '~> 1.0.0.rc1'
 gem "serviceworker-rails", '0.5.5'
-gem "devise", '4.4.3'
+gem "devise", '4.7.1'
 gem "material_icons", '2.2.1'
 gem 'lodash-rails', '4.17.10'
 #end
