@@ -1,27 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the project for [memereview.app](memereview.app)
 
-Things you may want to cover:
-
-* Ruby version
-5.0
-
-* System dependencies
-This is for development only
-If using this for deploment. Adjust gemfile for your required dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Built using Ruby on Rails for the back-end, [materialize](https://materializecss.com) for the front-end framework, and 
+the progressive web app (PWA)            design philosophy. AWS is used for image hosting.

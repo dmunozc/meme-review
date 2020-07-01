@@ -1,7 +1,7 @@
-$main-color: #FE1126; //211,3,3
+$main-color: #fe1126; //211,3,3
 $main-color-dark: #c20000; //211,3,3
 $main-color-light: #ff5e51; //211,3,3
-$complementary-color: #0CBBE3;
+$complementary-color: #0cbbe3;
 $complementary-color-dark: #008bb1;
 $complementary-color-light: #67eeff;
 
@@ -19,55 +19,57 @@ $footer-copyright-bg-color: #000;
 
 @import "materialize";
 
-.need_margin_body{
+.need_margin_body {
   padding-top: 52px !important;
 }
-
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-body{
+body {
   background: #969696;
 }
-
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Roboto Slab', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
 }
-
-.brand-logo{
-   //max-width:100%;
-   max-height:100%;
+.brand-logo {
+  //max-width:100%;
+  max-height: 100%;
 }
-.brand-logo-footer{
-   max-width:20vw;
-   max-height:100%;
+.brand-logo-footer {
+  max-width: 20vw;
+  max-height: 100%;
 }
-
-.image-main{
+.image-main {
 }
-.card-image-main{
-  max-height:  40vh;
+.card-image-main {
+  max-height: 40vh;
   overflow: hidden;
 }
-.card-image-show{
-  max-height:  40vh;
+.card-image-show {
+  max-height: 40vh;
   overflow: hidden;
 }
-.image-rating{
+.image-rating {
   height: 20vh;
 }
-.image-rating-show{
+.image-rating-show {
   height: 30vh !important;
 }
-.collection-header{
- color:$main-color; 
+.collection-header {
+  color: $main-color;
 }
-.next_page, .previous_page{
+.next_page,
+.previous_page {
   color: $main-color-dark !important;
 }
-.pagination li a{
+.pagination li a {
   color: black;
 }
-#main-info{
+#main-info {
   background-color: $main-color;
 }

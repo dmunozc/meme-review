@@ -21,7 +21,6 @@
 //= require_tree .
 //= require serviceworker-companion
 
-//this can fix reaload on all properties, carousel problem. but might change on pwa
 $(document).on('turbolinks:load', function() {
   M.AutoInit();
   var $grid = $('#main-elem').masonry({
@@ -31,7 +30,5 @@ $(document).on('turbolinks:load', function() {
   $grid.imagesLoaded().always( function() {
     setTimeout(function(){ $grid.masonry('layout'); }, 320);
   });
-
-
 });
 

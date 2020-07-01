@@ -44,10 +44,7 @@ function onActivate(event) {
 function onFetch(event) {
   var req = event.request;
   var requestURL = new URL(req.url);
-  //if(req.headers.get("Accept").indexOf('image') !== -1) {
-  //  resourceType = 'image';
-  //  console.log(requestURL)
-  //}
+  //only accept get reqs from us
   if (requestURL.origin == location.origin || requestURL.origin == "https://memereview-main.s3-us-west-2.amazonaws.com") {
     if (event.request.method != 'POST') {
       if (/\/\?page/.test(requestURL.href)) {
@@ -94,7 +91,6 @@ self.addEventListener('message', function(event){
 
 self.addEventListener('push', function(event) {
   if (debugSW) {console.log('[Serviceworker]', "Push!", event);}
-
   const title = 'Meme👏Review👏';
   const options = {
     body: event.data.text()

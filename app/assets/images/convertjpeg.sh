@@ -24,9 +24,3 @@ convert $SRC.jpeg -resize $S_SIZE -quality $HIGH meme-main/"$SRC"_small_1x.jpg
 convert $SRC.jpeg -resize $S_SIZE -quality $HIGH meme-main/"$SRC"_small_1x.webp
 convert $SRC.jpeg -resize $S_SIZE meme-main/"$SRC"_small_2x.jpg
 convert $SRC.jpeg -resize $S_SIZE meme-main/"$SRC"_small_2x.webp
-
-# To use this script,
-# run the following from a terminal
-# in a folder containing an image named foo.jpg (or whatever):
-#   chmod u+x convert.sh
-#   ./convert.sh foo
