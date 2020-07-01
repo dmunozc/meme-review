@@ -22,3 +22,7 @@
 
 #ignore raw images
 /app/assets/images/raw
+
+#ignore RubyMine specifics
+.idea/
+.rakeTasks
