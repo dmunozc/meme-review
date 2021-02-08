@@ -29,7 +29,7 @@ gem 'jbuilder', '2.7.0'
 
 #Added by me
 gem 'faker', '1.6.6'
-gem 'carrierwave', '1.1.0'
+gem 'carrierwave', '1.3.2'
 gem 'mini_magick', '4.5.1'
 gem 'fog', '1.38.0'
 gem 'will_paginate', '3.1.0'
